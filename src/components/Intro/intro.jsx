@@ -7,7 +7,7 @@ import Vector2 from "../../img/Vector2.png";
 import boy from "../../img/boy.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
+
 
 const intro = () =>{
     return(
@@ -29,7 +29,7 @@ const intro = () =>{
           <img src={Vector2} alt="" />
           <img src={boy} alt="" />
           <div>
-            <FloatingDiv />
+            
           </div>
 
             </div>
