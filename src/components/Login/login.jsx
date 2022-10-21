@@ -2,6 +2,7 @@ import "./login.css"
 import {FaArrowLeft} from "react-icons/fa"
 import IMG from "../../assets/hand.jpg"
 import React, { useState } from "react"
+import { NavLink } from "react-router-dom";
 
 const Login = ( ) => {
 
@@ -24,6 +25,22 @@ const Login = ( ) => {
             <input type="text" name="fullname" placeholder="Enter Fullname................" required  />
             <input type="password" name="password" placeholder="Enter Password............" required />
             </form>
+        </div>
+
+        <div className="button">
+        <button
+          type="submit"
+          className="btn btn-primary"
+        >
+          Login
+        </button>
+      </div>
+
+      <div className="signup">
+        <h3>Have no account? </h3>
+        <button type="submit" className="btn">
+            Sign Up
+          </button>
         </div>
         </div>
     )
