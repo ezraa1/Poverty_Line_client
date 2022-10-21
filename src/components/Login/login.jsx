@@ -1,9 +1,30 @@
-import React from "react";
+import "./login.css"
+import {FaArrowLeft} from "react-icons/fa"
+import IMG from "../../assets/hand.jpg"
+import React, { useState } from "react"
 
 const Login = ( ) => {
+
+    const [data, setData] =
+    useState({
+        fullname: "",
+        password: "",
+      });
+
     return(
-        <div>
-            <h1>WELCOME BACK</h1>
+        <div className="nav">
+            <div className="bar">
+        <FaArrowLeft /><h3>Back to Homepage</h3>
+            <h1>WELCOME BACK!</h1>
+            <img src={IMG} alt="Logo Image" />
+                </div>
+
+            <div className="form">
+            <form >
+            <input type="text" name="fullname" placeholder="Enter Fullname................" required  />
+            <input type="password" name="password" placeholder="Enter Password............" required />
+            </form>
+        </div>
         </div>
     )
 }
