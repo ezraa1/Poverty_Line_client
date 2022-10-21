@@ -1,4 +1,5 @@
 import React from "react";
+import './intro.css'
 
 const intro = () =>{
     return(
@@ -11,7 +12,7 @@ const intro = () =>{
                 </div>  
                 <button className="button intro-button">Click here</button> 
             </div>
-            <div className="intro-right"></div>
+            <div className="intro-right">right side</div>
         </div>
 
     )
