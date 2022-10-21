@@ -5,9 +5,9 @@ const intro = () =>{
         <div className="intro">
             <div className="intro-left">
                 <div className="intro-name">
-                <span>Hey! What are looking at?</span>
-                <span>Luckily am not agree today</span>
-                <span>In the case of our random word generator, a random word is a word that is randomly chosen from the database of words we have in our generator.</span>
+                <span>Lorem ipsum dolor sit, </span>
+                <span>Lorem ipsum  </span>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, cupiditate tempore? Aut quos pariatur, quasi ea officia accusantium ipsum? Aut quam ex itaque veritatis aspernatur delectus! Perspiciatis natus mollitia molestiae!</span>
                 </div>  
                 <button className="button intro-button">Click here</button> 
             </div>
