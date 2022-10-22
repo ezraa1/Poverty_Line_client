@@ -6,12 +6,12 @@ import { NavLink } from "react-router-dom";
 
 const Login = ( ) => {
 
-    const [data, setData] =
-    useState({
-        fullname: "",
-        password: "",
-      });
 
+  const [data, setData] =
+  useState({
+      fullname: "",
+      password: "",
+    });
     return(
         <div className="nav">
             <div className="bar">

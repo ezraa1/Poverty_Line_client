@@ -17,7 +17,7 @@ const Footer = ( ) => {
         </div>
 
         <div className="copyright">
-            <small>&copy; Created with ProDev by<span>Team Aid Hub.</span> All rights reserved</small>
+            <small>&copy; Created with ProDev by <span> Team Aid Hub.</span> All rights reserved</small>
         </div>
         </footer>
     )
