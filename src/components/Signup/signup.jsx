@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import "./signup.css"
 
 const Signup = ( ) => {
     return(
@@ -19,9 +20,10 @@ const Signup = ( ) => {
         <input type="text" name="lastname" placeholder="Enter your lastname................" required   />
         <input type="email" name="email" placeholder="Enter you email............" required  />
         <input type="text" name="country" placeholder="Kenya..........." required  />
-        <input type="password" name="password" placeholder="Enter you password............" required   />
-        <input type="Confirm password" name="Confirm password" placeholder="Enter you password............" required   />
         <input type="tel" name="phone" placeholder="+254 123 456 789........." required  />
+        <input type="password" name="password" placeholder="Enter you password............" required   />
+        <input type="confirmpassword" name="confirmpassword" placeholder="Confirm password............" required   />
+
           </form>
         </div>
         <div className="button">

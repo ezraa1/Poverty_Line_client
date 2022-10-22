@@ -11,7 +11,7 @@ const Footer = ( ) => {
         <a href="#" className="logo"></a>
         <a href="#"><BsFillArrowUpCircleFill /></a>
         <div className="soshi">
-                <a href="https://instagram.com"><FaInstagramSquare /></a>
+                <a href="https://figma.com"><FaInstagramSquare /></a>
                 <a href="https://github.com"><FaGithubSquare /></a>
                 <a href="https://slack.com"><SiSlack /></a>
         </div>
