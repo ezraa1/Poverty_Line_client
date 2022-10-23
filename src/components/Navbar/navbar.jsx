@@ -10,7 +10,7 @@ const Navbar = ( ) =>{
             </div>
             <div className="nav-right">
                 <div className="nav-list">
-                    <ul style={{listStyleType: 'none'}}>
+                    <ul className="nav-items">
                         <li>Home</li>
                         <li>About us</li>
                         <li>Donate</li>
