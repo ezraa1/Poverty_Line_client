@@ -2,3 +2,9 @@
     font-size: 5rem;
     color: white;
 }
+
+.par {
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}

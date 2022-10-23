@@ -1,19 +1,28 @@
 import React from "react"
 import "./signup.css"
+import { NavLink } from "react-router-dom"
 
 const Signup = ( ) => {
 
     return(
         <div className="log">
+        <div className="par">
+        <p>“Do not look the other way;
+        do not hesitate. Recognise
+        that the world is hungry for
+         action, not words. Act with courage and vision.”</p>
+        </div>
             <div className="sign">
         <h1>SIGN UP</h1>
         </div>
 
         <div className="signup">
         <h3>Already have an account? </h3>
+        <NavLink to="/login">
         <button type="submit" className="btn">
             Login
           </button>
+          </NavLink>
         </div>
       <div className="form">
       <form>
@@ -27,6 +36,7 @@ const Signup = ( ) => {
 
           </form>
         </div>
+
         <div className="button">
         <button type="submit" className="btn btn-primary">
           Submit

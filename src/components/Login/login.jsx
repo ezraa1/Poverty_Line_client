@@ -2,8 +2,7 @@ import "./login.css"
 import {FaArrowLeft} from "react-icons/fa"
 import IMG from "../../assets/hand.jpg"
 import React, { useState } from "react"
-import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom"
 
 
 const Login = ( ) => {
@@ -39,9 +38,11 @@ const Login = ( ) => {
 
       <div className="signup">
         <h3>Have no account? </h3>
+        <NavLink to="/signup">
         <button type="submit" className="btn">
             Sign Up
           </button>
+          </NavLink>
         </div>
         </div>
     )
