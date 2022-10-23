@@ -2,6 +2,7 @@ import React from "react"
 import "./signup.css"
 
 const Signup = ( ) => {
+
     return(
         <div className="log">
             <div className="sign">

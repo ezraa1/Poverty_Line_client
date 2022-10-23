@@ -3,15 +3,15 @@ import {FaArrowLeft} from "react-icons/fa"
 import IMG from "../../assets/hand.jpg"
 import React, { useState } from "react"
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = ( ) => {
-
-
-  const [data, setData] =
-  useState({
+  const [data, setData] =useState({
       fullname: "",
       password: "",
     });
+
+
     return(
         <div className="nav">
             <div className="bar">
@@ -21,7 +21,7 @@ const Login = ( ) => {
                 </div>
 
             <div className="form">
-            <form >
+            <form onSubmit>
             <input type="text" name="fullname" placeholder="Enter Fullname................" required  />
             <input type="password" name="password" placeholder="Enter Password............" required />
             </form>
