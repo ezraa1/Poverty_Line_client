@@ -29,7 +29,7 @@
     
   }
   .nav-items > li{
-    padding: 60px;
+    padding: 50px;
 
   }
   
@@ -43,7 +43,7 @@
   }
   
   .nav-list > ul :hover {
-    color: var(--orange);
+    color: var(--blue);
     cursor: pointer;
   } 
   
