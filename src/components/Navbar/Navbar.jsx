@@ -16,11 +16,12 @@ const Navbar = ( ) =>{
                         <li>Donate</li>
                         <li>Volunteer</li>
                         <li>Login/sign-up</li>
+                        <li>Contact Us</li>
                     </ul>
 
                 </div>
                 <button className="button">
-                    Contact Us
+                    Click here
                 </button>
             </div>
         </div>

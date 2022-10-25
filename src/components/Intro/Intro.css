@@ -61,12 +61,7 @@
     object-fit: cover;
   }
 
-  .intro-scroll {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 20px;
-  }
+  
   /* right side styling */
   .intro-right {
     flex: 1;
