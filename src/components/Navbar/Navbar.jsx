@@ -1,5 +1,5 @@
 import React from "react";
-import './navbar.css';
+import './Navbar.css';
 
 const Navbar = ( ) =>{
     return(
@@ -14,7 +14,7 @@ const Navbar = ( ) =>{
                         <li>Home</li>
                         <li>About us</li>
                         <li>Donate</li>
-                        <li>Contact us</li>
+                        <li>Volunteer</li>
                         <li>Login/sign-up</li>
                     </ul>
 
