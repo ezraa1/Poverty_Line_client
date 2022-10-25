@@ -6,10 +6,15 @@ import Email from '../../img/email.jpg'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { useState } from 'react'
+import { ThemeContext } from '../../context'
+import { useContext } from 'react'
+
 
 const Contact = () => {
     const form = useRef();
     const [done, setDone] = useState(false)
+    const theme = useContext(ThemeContext)
+  const darkMode = theme.state.darkMode;
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -48,11 +53,11 @@ const Contact = () => {
                     <b>Feel free to message us For enquires</b>
                 </p>
                 <form ref={form} onSubmit= {handleSubmit}>
-                    <input type='text' placeholder='Name' name='user_name' />
-                    <input type='text' placeholder='Subject' name='user_subject' />
-                    <input type='text' placeholder='Email' name='user_email' />
-                    <textarea placeholder='Message' name='message' rows='5'/>
-                    <button>Submit</button>
+                    <input style={{backgroundColor: darkMode && "#333"}} type='text' placeholder='Name' name='user_name' />
+                    <input style={{backgroundColor: darkMode && "#333"}} type='text' placeholder='Subject' name='user_subject' />
+                    <input style={{backgroundColor: darkMode && "#333"}} type='text' placeholder='Email' name='user_email' />
+                    <textarea style={{backgroundColor: darkMode && "#333"}} placeholder='Message' name='message' rows='5'/>
+                    <button>Submit</button> <br />
                     {done && "sumitted successfully..................."}
                 </form>
             </div>
