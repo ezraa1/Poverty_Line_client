@@ -25,8 +25,7 @@ const intro = () =>{
                 
                 </div>  
                 
-                {/* <button className="button intro-button">click</button>  */}
-        
+                
             </div>
             <div className="intro-right">
               <img src={kids} alt=" " className="intro-img"/>

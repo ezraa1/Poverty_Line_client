@@ -126,3 +126,23 @@
       top: -7rem !important;;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    .intro {
+      flex-direction: column;
+    }
+  
+    .intro-left-wrapper {
+    
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+  
+    .intro-desc{
+      display: none;
+    }
+    
+  }

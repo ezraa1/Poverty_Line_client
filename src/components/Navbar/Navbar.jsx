@@ -6,7 +6,7 @@ const Navbar = ( ) =>{
         <div className="nav-wrapper">
             <div className="nav-left">
                 <div className="nav-name">Charity</div>
-                <span>toggle</span>
+               
             </div>
             <div className="nav-right">
                 <div className="nav-list">
@@ -20,9 +20,9 @@ const Navbar = ( ) =>{
                     </ul>
 
                 </div>
-                <button className="button">
+                {/* <button className="button">
                     Click here
-                </button>
+                </button> */}
             </div>
         </div>
     )
