@@ -4,7 +4,14 @@
 }
 
 .par {
-    text-align: right;
+    text-align: centre;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.sign img {
+    width: 20vw;
+    margin: 0 auto;
 }
