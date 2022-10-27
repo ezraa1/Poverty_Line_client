@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./Login/login";
 import Signup from "./Signup/signup";
+import Home from "./pages/Home";
 
 const App = ( ) => {
   const [user, setUser] = useState(null);
@@ -20,8 +21,9 @@ const App = ( ) => {
               <Route
                 path="/"
                 index
-                element={<Login />}
+                element={<Home />}
               />
+
               <Route
                 path="/login"
                 element={<Login />}
