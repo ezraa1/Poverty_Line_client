@@ -1,71 +1,81 @@
-# Getting Started with Create React App
+# README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Poverty Line-Client
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+In Sub-Saharan Africa, 42% of the total population lives below the poverty line. Poverty eradication, employment generation and social integration are some of the core issues that need to be addressed, especially in the developing countries. This project addresses the three core ussues by creating a classification system that consists of an international community that enables the building of secure, just, free and harmonious societies offering opportunities and higher standards of living for all. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+A user can create an account and log in
+A user can create a profile
+A user can update and delete records
+A user can search
+A user can view other users
+A user can categorize or sort different types of regions, social backgrounds and so much more
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Requirements
+This project uses React for the frontend and Ruby on Rails for the backend. In order to run this app, you need npm with a version higher than 5.2 and Node.js installed on your local machine. The best OS to run this app is Windows 10+ ,macOS or Linux.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For more information on how to run a react app, feel free to visit: (https://create-react-app.dev/docs/getting-started/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Clone this repository on your local machine, using the command line interface: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+` git clone git@github.com:ezraa1/Poverty_Line_client.git`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Navigate to the project directory: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`cd Poverty_Line_client`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To open the project on Visual studio, run:
 
-## Learn More
+`code .`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In the terminal, run `npm install`, to install all the dependencies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Once the installation is complete, run `npm start` on the terminal. This runs the app in development mode.
 
-### Code Splitting
+To view the app on your browser, open (http://localhost:3000). 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The contributors of this project were:
 
-### Making a Progressive Web App
+Milton Ouma
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Daisy Nekesa](https://github.com/Daisysimy1)
 
-### Advanced Configuration
+[Joy Kemunto](https://github.com/Kemunto-wendy)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## MIT License
 
-### Deployment
+Copyright (c) [year] [fullname]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### `npm run build` fails to minify
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Poverty_Line_client
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
