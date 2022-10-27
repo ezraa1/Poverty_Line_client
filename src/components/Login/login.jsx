@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom"
 
 const Login = ( ) => {
   const [data, setData] =useState({
-      fullname: "",
-      password: "",
+    email: "",
+    password: "",
     });
 
     const [errors, setErrors] = useState(null);
@@ -25,7 +25,7 @@ const Login = ( ) => {
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await fetch("/login", {
+        const response = await fetch("https://poverty-line-api.herokuapp.com/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json;charset=utf-8",
@@ -35,7 +35,7 @@ const Login = ( ) => {
         const user = await response.json();
         if (response.ok) {
           setSuccess("Logged in successfully!");
-          setData({ username: "", password: "" });
+          setData({ email: "", password: "" });
           setTimeout(() => {
             navigate("/home", { state: user });
           }, 2000);
@@ -83,8 +83,8 @@ const Login = ( ) => {
 
             <div className="form">
             <form onSubmit= {handleSubmit} >
-            <input type="text" name="fullname" placeholder="Enter Fullname................" required
-            value={data.fullname}
+            <input type="text" name="email" placeholder="Enter Email.................." required
+            value={data.email}
             onChange={handleChange}/>
             <input type="password" name="password" placeholder="Enter Password............" required
             value={data.password}
@@ -95,7 +95,7 @@ const Login = ( ) => {
         <div className="button">
         <button
           type="submit"
-          className="btn btn-primary"
+          className="btn btn-primary" onClick={handleSubmit}
         >
           Login
         </button>
