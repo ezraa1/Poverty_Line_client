@@ -30,7 +30,7 @@ const Contact = () => {
         <div className='contact-bg'></div>
         <div className='contact-wrapper'>
             <div className='contact-left'>
-                <h3 className='contact-title'>You can can email, call us or visit our offices</h3>
+                <h3 className='contact-title'>You can email, call us or visit our offices</h3>
                 <div className='contact-info'>
                 <div className='contact-info-item'>
                         <img src={Phone} alt='' className='contact-icon'/>
