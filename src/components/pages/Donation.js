@@ -2,8 +2,12 @@ import React from "react";
 function Donation() {
   return (
     <div className="page-heading">
-      <h1>Donation</h1>
+      <h1>Donations</h1>
+      <div className="education">
+         <button>Educate A Child</button>
+      </div>
     </div>
+    
   );
 }
 

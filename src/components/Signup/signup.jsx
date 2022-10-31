@@ -87,7 +87,7 @@ const Signup = ( ) => {
             ) : null}
 
         <h1>SIGN UP</h1>
-        <img src={IMG} alt="Logo Image" />
+        <img src={IMG} alt="Logo" />
         </div>
 
         <div className="signup">

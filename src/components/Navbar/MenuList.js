@@ -5,11 +5,11 @@ export const MenuList = [
     },
     {
       title: "Regions",
-      url: "/region",
+      url: "/regions",
     },
     {
       title: "Donate",
-      url: "/donation",
+      url: "/donations",
     },
     {
       title: "Contact Us",
