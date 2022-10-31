@@ -115,10 +115,8 @@ const Donation = ( ) => {
           <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
             Submit
           </button>
-              <p>“As long as poverty, injustice and gross inequality
-               exist in our world, none of us can truly rest.”
-                “If a free society cannot help the many who
-                are poor, it cannot save the few who are rich.”</p>
+              <p>“Always give without remembering and always receive without forgetting"
+              Brian Tracy</p>
             </form>
           </div>
           </div>
