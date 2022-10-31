@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./Login/login";
 import Signup from "./Signup/signup";
 import Home from "./pages/Home";
+import Dashboard from "./Dashboard/dashboard";
 
 const App = ( ) => {
   const [user, setUser] = useState(null);
@@ -25,13 +26,19 @@ const App = ( ) => {
               />
 
               <Route
+              path="/signup"
+              element={<Signup />}
+            />
+
+              <Route
                 path="/login"
                 element={<Login />}
               />
+
               <Route
-                path="/signup"
-                element={<Signup />}
-              />
+              path="/dashboard"
+              element={<Dashboard />}
+            />
               </Routes>
               </Router>
             </div>

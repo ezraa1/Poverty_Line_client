@@ -22,6 +22,11 @@ const Login = ( ) => {
       setData({ ...data, [name]: value });
     };
 
+      const handleClick =( ) =>{
+        navigate('/')
+      }
+
+
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
@@ -37,7 +42,7 @@ const Login = ( ) => {
           setSuccess("Logged in successfully!");
           setData({ email: "", password: "" });
           setTimeout(() => {
-            navigate("/home", { state: user });
+            navigate("/dashboard", { state: user });
           }, 2000);
         } else {
           setErrors(user);
@@ -50,7 +55,7 @@ const Login = ( ) => {
     return(
         <div className="nav">
         <div className="arrow">
-        <FaArrowLeft />
+        <FaArrowLeft  onClick={handleClick}/>
         </div>
             <div className="bar">
             {errors !== null ? (
