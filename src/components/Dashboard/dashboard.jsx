@@ -7,6 +7,7 @@ import {MdDashboard} from "react-icons/md"
 import {BiDonateBlood} from "react-icons/bi"
 import {SiTheregister} from "react-icons/si"
 import Detail from "../Detail/detail";
+import Form from "../Form/form";
 
 const Dashboard = ( ) => {
     const navigate = useNavigate();
@@ -38,6 +39,7 @@ const Dashboard = ( ) => {
         </ul>
         <Detail />
         </div>
+        <Form />
         </div>
 
     )

@@ -118,40 +118,58 @@ const Form = ( ) => {
       <h1>Fill in the form below</h1>
       </div>
       <form onSubmit={handleSubmit}>
+      <label>Enter Full Name</label>
         <input type="text" name="fullname" placeholder="Enter your fullname..............." required  onChange={handleChange}
               value={data.full_name}  />
+        <label>Enter email</label>
         <input type="email" name="email" placeholder="Enter you email............" required   onChange={handleChange}
         value={data.email}/>
+        <label>Gender</label>
         <input type="gender" name="gender" placeholder="Female/ male............" required   onChange={handleChange}
         value={data.gender}/>
+        <label>Age</label>
         <input type="text" name="age" placeholder="18+..." required   onChange={handleChange}
           value={data.age}/>
+          <label>City</label>
           <input type="text" name="city" placeholder="City............" required   onChange={handleChange}
         value={data.city}/>
+        <label>Country</label>
         <input type="text" name="countryname" placeholder="Country..........." required   onChange={handleChange}
         value={data.country_name}/>
+        <label>Region</label>
         <input type="text" name="region_id" placeholder="Enter region id.........." required   onChange={handleChange}
         value={data.region_id}/>
+        <label>Telephone</label>
         <input type="tel" name="phone" placeholder="Start with country code +254........." required   onChange={handleChange}
         value={data.phone}/>
+        <label>Marital Status</label>
         <input type="text" name="marital_status" placeholder="Single/married.........." required   onChange={handleChange}
         value={data.marital_status}/>
+        <label>Employment Status</label>
         <input type="text" name="employment_status" placeholder="Employed/ Not employed.........." required   onChange={handleChange}
         value={data.employment_status}/>
+        <label>Monthly Income</label>
         <input type="text" name="monthly_income" placeholder="Amount.........." required   onChange={handleChange}
         value={data.monthly_income}/>
+        <label>Access to safe water</label>
         <input type="text" name="access_to_safe_water" placeholder="Yes/No.........." required   onChange={handleChange}
         value={data.access_to_safe_water}/>
+        <label>Access to Electricity</label>
         <input type="text" name="access_to_electricity" placeholder="Yes/No.........." required   onChange={handleChange}
         value={data.access_to_electricity}/>
+        <label>Medical Insurance</label>
         <input type="text" name="medical_insurance" placeholder="Yes/N/A........." required   onChange={handleChange}
         value={data.medical_insurance}/>
+        <label>Education Level</label>
         <input type="text" name="education_level" placeholder="The highest.........." required   onChange={handleChange}
         value={data.education_level}/>
+        <label>Religion</label>
         <input type="text" name="religion" placeholder="Christian/ Muslim/ Pagan.........." required   onChange={handleChange}
         value={data.religion}/>
+        <label>Disability Challenges</label>
         <input type="text" name="is_disabled" placeholder="Yes/ No........." required   onChange={handleChange}
         value={data.is_disabled}/>
+        <label>Password Digest</label>
         <input type="text" name="password_digest" placeholder="Password........." required   onChange={handleChange}
         value={data.password_digest}/>
         <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
