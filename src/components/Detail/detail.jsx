@@ -14,7 +14,7 @@ const Detail = ( ) => {
                 <li>
                 <a href=""><FaUserAlt />Users Details</a>
                     <li>
-                        <a href="">Add Users</a>
+                        <a href="../../form.jsx">Add Users</a>
                     </li>
                     <li>
                         <a href=" ">View Users</a>

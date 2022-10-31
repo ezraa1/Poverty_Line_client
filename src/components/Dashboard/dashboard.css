@@ -1,8 +1,11 @@
 .dash {
-    background-color: white;
     text-align: left;
 }
-
 .dash h3{
     text-align: right;
+}
+.dash ul li a{
+    font-size: 1rem;
+   display: grid;
+
 }
