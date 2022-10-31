@@ -94,16 +94,22 @@ const Donation = ( ) => {
         <h1>Fill in the form below</h1>
         </div>
         <form onSubmit={handleSubmit}>
+        <label>User Id</label>
           <input type="text" name="user_id" placeholder="User Id.............." required  onChange={handleChange}
                 value={data.user_id}  />
+                <label>Donation Name</label>
           <input type="text" name="donation_name" placeholder="Enter you name............" required   onChange={handleChange}
           value={data.donation_name}/>
+          <label>Description</label>
           <input type="text" name="description" placeholder="Description..........." required   onChange={handleChange}
           value={data.description}/>
+          <label>Donation Amount</label>
           <input type="text" name="donation_amount" placeholder="Amount....." required   onChange={handleChange}
             value={data.donation_amount}/>
+            <label>Region Id</label>
             <input type="text" name="region_id" placeholder="Region id..........." required   onChange={handleChange}
           value={data.region_id}/>
+          <label>Country code</label>
           <input type="text" name="country_code" placeholder="Country code.........." required   onChange={handleChange}
           value={data.country_code}/>
           <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
