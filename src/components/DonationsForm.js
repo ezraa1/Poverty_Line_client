@@ -19,6 +19,8 @@ function DonationsForm(){
                     <label><b>COUNTRY CODE:</b></label>
                     <input placeholder="Enter the country code of the recipient country"></input>
 
+                    <button className="form-btn">SEND DONATION</button>
+
                 </form>
             </div>
         </div>
