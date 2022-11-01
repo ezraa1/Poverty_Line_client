@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
-import SignUp from './components/SignUp'
+import Subscribe from './components/Subscribe'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <About />
       <Testimonials />
-      <SignUp />
+      <Subscribe />
       <Footer />
     </div>
   );
