@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./usertable.css"
+import {AiFillEdit} from "react-icons/ai"
+import {MdDelete} from "react-icons/md"
 
 const UserTable = ( ) => {
   const [data, setData] = useState([])
@@ -40,6 +42,8 @@ const UserTable = ( ) => {
             <th>Religion</th>
             <th>Disability</th>
             <th>Password Digest</th>
+            <th>Action</th>
+
           </tr>
           </thead>
           <tbody>
@@ -64,6 +68,10 @@ const UserTable = ( ) => {
             <td>{data.religion}</td>
             <td>{data.is_disabled}</td>
             <td>{data.password_digest}</td>
+            <td><button className="btn btn-danger"><AiFillEdit /></button>
+            <button className="btn btn-danger"><MdDelete /></button>
+            </td>
+
             </tr>
           ))}
           </tbody>

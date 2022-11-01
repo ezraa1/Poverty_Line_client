@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./donationtable.css"
+import {AiFillEdit} from "react-icons/ai"
+import {MdDelete} from "react-icons/md"
 
 const DonationTable = ( ) => {
   const [data, setData] = useState([])
@@ -27,6 +29,7 @@ const DonationTable = ( ) => {
             <th>Donation Amount</th>
             <th>Region Id</th>
             <th>Country Code</th>
+            <th>Action</th>
           </tr>
           </thead>
           <tbody>
@@ -38,6 +41,9 @@ const DonationTable = ( ) => {
             <td>{data.donation_amount}</td>
             <td>{data.region_id}</td>
             <td>{data.country_code}</td>
+            <td><button className="btn btn-danger"><AiFillEdit /></button>
+            <button className="btn btn-danger"><MdDelete /></button>
+            </td>
             </tr>
           ))}
           </tbody>

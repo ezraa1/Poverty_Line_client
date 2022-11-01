@@ -1,10 +1,13 @@
-.tab h1{
+.tab h4{
     text-align: left;
-    background-color: white;
+    background-color: rgb(10, 146, 151);
+    font-size: 3rem;
 }
-.form {
-    background-color: white;
-}
+
 input, label {
-    margin-right: 1300px;
+    font-weight: bolder;
 }
+ .form p{
+    font-style: italic;
+    font-weight: bold;
+ }

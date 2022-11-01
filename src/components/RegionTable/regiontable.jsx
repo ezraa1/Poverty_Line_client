@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./regiontable.css"
+import {AiFillEdit} from "react-icons/ai"
+import {MdDelete} from "react-icons/md"
 
 const RegionTable = ( ) => {
   const [data, setData] = useState([])
@@ -28,6 +30,7 @@ const RegionTable = ( ) => {
             <th>Country Code</th>
             <th>City</th>
             <th>City Reporting level</th>
+            <th>Action</th>
           </tr>
           </thead>
           <tbody>
@@ -40,6 +43,9 @@ const RegionTable = ( ) => {
             <td>{data.country_code}</td>
             <td>{data.city}</td>
             <td>{data.city_reporting_level}</td>
+            <td><button className="btn btn-danger"><AiFillEdit /></button>
+            <button className="btn btn-danger"><MdDelete /></button>
+            </td>
             </tr>
           ))}
           </tbody>

@@ -38,7 +38,7 @@ const Form = ( ) => {
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await fetch("https://poverty-line-api.herokuapp.com/signup", {
+        const response = await fetch("https://poverty-line-api.herokuapp.com/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json;charset=utf-8",
@@ -115,7 +115,7 @@ const Form = ( ) => {
         </div>
       <div className="form">
       <div className="tab">
-      <h1>Fill in the form below</h1>
+      <h4>Fill in the form below</h4>
       </div>
       <form onSubmit={handleSubmit}>
       <label>Enter Full Name</label>
