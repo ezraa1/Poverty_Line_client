@@ -1,7 +1,7 @@
 .btn-donations {
     display: grid;
     grid-template-columns: repeat(3,1fr);;
-    margin: 0 10px;
+    margin: 0 5px;
     text-align: center;
        
     
@@ -12,4 +12,17 @@
 }
 .donations-page{
     width: 100%;
+}
+
+.btn-donations img{
+    max-width: 100%;
+    height: 60%;
+    padding: 1rem;
+
+}
+
+
+.btn-donations button{
+    height: 35px;
+    padding: 5px;
 }

@@ -1,5 +1,10 @@
 import React from "react";
-import "./Donation.css"
+import "./Donation.css";
+import education from "./images/education.jpg";
+import food from './images/food.jpg';
+import sick from "./images/sick.jpg"
+
+
 function Donation() {
 
   return (
@@ -11,13 +16,16 @@ function Donation() {
       </div>
       <div className="btn-donations">
       <div className="education">
-         <button className="btn-educate">Educate A Child</button>
+          <img src={education} alt="education"/>
+         <button className="btn-educate"><b>EDUCATE A CHILD</b></button>
       </div>
       <div>
-        <button className="btn-feed">Feed a Family</button>
+        <img src={food} alt="food"/>
+        <button className="btn-feed"><b>FEED A FAMILY</b></button>
       </div>
       <div>
-        <button className="health">Healthcare Donations</button>
+        <img width={500} src={sick} alt="sick"/>
+        <button className="health"><b>HEALTHCARE DONATIONS</b></button>
       </div>
       </div>
     </div>
