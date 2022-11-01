@@ -5,18 +5,8 @@ import food from './images/food.jpg';
 import sick from "./images/sick.jpg";
 
 
-//import DonationsForm from "./DonationsForm";
-
-
-
-
 function Donations() {
 
- 
-    
-    function handleDonate() {
-        
-    }
 
   return (
     
@@ -31,7 +21,7 @@ function Donations() {
 
       <div className="education">
           <img src={education} alt="education"/>
-         <button onClick={handleDonate} className="btn-educate"><b>EDUCATE A CHILD</b></button>
+         <button className="btn-educate"><b>EDUCATE A CHILD</b></button>
       </div>
 
       <div>
