@@ -1,12 +1,3 @@
-.nav {
-    background-image: url("../../assets/login.jpg");
-    text-align: center;
-    height: 100vh;
-    overflow-y: auto;
-    background-size: cover;
-
-}
-
 .arrow {
   margin-top: 20px;
   text-align: left;

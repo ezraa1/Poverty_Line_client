@@ -1,24 +1,27 @@
-import React, {useState} from "react";
-import "./table.css"
+import React, {useState, useEffect} from "react";
+import "./usertable.css"
 
+const UserTable = ( ) => {
+  const [data, setData] = useState([])
 
-const Table =async ( ) => {
-
-  const [data, setData] = useState()
-
-  const response = await fetch("https://poverty-line-api.herokuapp.com/users", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-    },
-    body: JSON.stringify(data),
-  });
-
+  useEffect(() => {
+    const url = "https://poverty-line-api.herokuapp.com/users"
+    fetch(url)
+    .then((response) =>
+    response.json()).then(json => {
+        console.log("jsonn", json)
+        setData(json)
+    }).catch(e =>{
+        console.log("e", e)
+    })
+    } , [ ])
     return (
       <div className="app-container">
+      <h1>USERS DETAILS</h1>
         <table>
           <thead>
           <tr>
+          <th>Id</th>
             <th>Full Name</th>
             <th>Email</th>
             <th>Gender</th>
@@ -42,6 +45,7 @@ const Table =async ( ) => {
           <tbody>
           {data.map(( ) => (
             <tr>
+            <td>{data.id}</td>
             <td>{data.full_name}</td>
             <td>{data.email}</td>
             <td>{data.gender}</td>
@@ -68,4 +72,4 @@ const Table =async ( ) => {
     );
   }
 
-  export default Table;
+  export default UserTable;

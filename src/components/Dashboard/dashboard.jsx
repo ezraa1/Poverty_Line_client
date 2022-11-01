@@ -5,9 +5,10 @@ import { useNavigate } from "react-router-dom"
 import {MdDashboard} from "react-icons/md"
 import {BiDonateBlood} from "react-icons/bi"
 import {SiTheregister} from "react-icons/si"
-import Detail from "../Detail/detail";
-import Table from "../Table/table";
-
+import { NavLink } from "react-router-dom"
+import RegionTable from "../RegionTable/regiontable";
+import DonationTable from "../DonationTable/donationtable";
+import UserTable from "../UserTable/usertable";
 
 const Dashboard = ( ) => {
     const navigate = useNavigate();
@@ -23,19 +24,19 @@ const Dashboard = ( ) => {
         <h3> <RiLogoutBoxLine onClick={handleClick}/>Logout</h3>
         <ul>
              <li>
-                 <a href=""><MdDashboard />Users</a>
+             <NavLink to="/form"><a href=""><div className="icon"><MdDashboard /></div>Add users</a></NavLink>
              </li>
              <li>
-                 <a href=""><BiDonateBlood />Donation</a>
+             <NavLink to="/"> <a href=""><div className="icon"><BiDonateBlood /></div>Add donation</a></NavLink>
              </li>
              <li>
-                 <a href=""><SiTheregister />Region</a>
+             <NavLink to="/"><a href=""><div className="icon"><SiTheregister /></div>Add region</a></NavLink>
              </li>
         </ul>
-        <Detail />
-        <Table />
+        <UserTable />
+        <RegionTable />
+        <DonationTable />
         </div>
-
         </div>
 
     )

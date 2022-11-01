@@ -107,7 +107,7 @@ const Signup = ( ) => {
         </div>
       <div className="form">
       <form onSubmit={handleSubmit}>
-        <input type="text" name="firstname" placeholder="Enter your firstname................" required  onChange={handleChange}
+                      <input type="text" name="firstname" placeholder="Enter your firstname................" required  onChange={handleChange}
               value={data.firstname}  />
        <input type="text" name="lastname" placeholder="Enter your lastname................" required   onChange={handleChange}
             value={data.lastname} />

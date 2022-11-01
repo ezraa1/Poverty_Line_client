@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState, useNavigate} from "react";
 
 const Region = ( ) => {
     const [data, setData] = useState({
+        id:"",
         sub_region: "",
         sub_region_code: "",
         country_name: "",
@@ -36,6 +37,7 @@ const Region = ( ) => {
             setUser(user);
             setSuccess("Form completed successfully");
             setData({
+              id:"",
                 sub_region: "",
                 sub_region_code: "",
                 country_name: "",

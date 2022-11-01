@@ -12,9 +12,9 @@ const Detail = ( ) => {
                 <a href="">Dashboard</a>
                 </li>
                 <li>
-                <a href=""><FaUserAlt />Users Details</a>
+                <a href=""><div className="icon"><FaUserAlt /></div>Users Details</a>
                     <li>
-                        <a href="../../form.jsx">Add Users</a>
+                        <a href="">Add Users</a>
                     </li>
                     <li>
                         <a href=" ">View Users</a>
@@ -27,7 +27,7 @@ const Detail = ( ) => {
                     </li>
                     </li>
                     <li>
-                <a href=""><BiDonateBlood />Donation Details</a>
+                <a href=""><div className="icon"><BiDonateBlood /></div>Donation Details</a>
                     <li>
                         <a href="">Add Donation</a>
                     </li>
@@ -42,7 +42,7 @@ const Detail = ( ) => {
                     </li>
                     </li>
                     <li>
-                <a href=""><SiTheregister />Region Details</a>
+                <a href=""><div className="icon"><SiTheregister /></div>Region Details</a>
                     <li>
                         <a href="">Add Region</a>
                     </li>
