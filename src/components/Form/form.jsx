@@ -115,7 +115,7 @@ const Form = ( ) => {
         </div>
       <div className="form">
       <div className="tab">
-      <h4>Fill in the form below</h4>
+      <h1>Fill in the form below</h1>
       </div>
       <form onSubmit={handleSubmit}>
       <label>Enter Full Name</label>

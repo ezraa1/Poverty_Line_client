@@ -9,13 +9,9 @@ const DonationTable = ( ) => {
   useEffect(() => {
     const url = "https://poverty-line-api.herokuapp.com/donations"
     fetch(url)
-    .then((response) =>
-    response.json()).then(json => {
-        console.log("jsonn", json)
-        setData(json)
-    }).catch(e =>{
-        console.log("e", e)
-    })
+    .then((r) => r.json())
+        .then((data) => setData(data));
+
     } , [ ])
     return (
       <div className="app-container">

@@ -9,7 +9,6 @@ import { NavLink } from "react-router-dom"
 import RegionTable from "../RegionTable/regiontable";
 import DonationTable from "../DonationTable/donationtable";
 import UserTable from "../UserTable/usertable";
-import Form from "../Form/form";
 
 const Dashboard = ( ) => {
     const navigate = useNavigate();
@@ -37,7 +36,6 @@ const Dashboard = ( ) => {
         <UserTable />
         <RegionTable />
         <DonationTable />
-        <Form />
         </div>
         </div>
 
