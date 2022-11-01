@@ -3,7 +3,7 @@ import "./Donations.css";
 import education from "./images/education.jpg";
 import food from './images/food.jpg';
 import sick from "./images/sick.jpg";
-
+import history from "./history";
 
 
 
@@ -24,7 +24,7 @@ function Donations() {
 
       <div className="education">
           <img src={education} alt="education"/>
-         <button className="btn-educate"><b>EDUCATE A CHILD</b></button>
+         <button onClick={() => history.push("/Donate")} className="btn-educate"><b>EDUCATE A CHILD</b></button>
       </div>
 
       <div>
