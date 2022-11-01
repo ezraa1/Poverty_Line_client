@@ -9,7 +9,7 @@ const Hero = () => {
                 <p>Nairobi, kenya</p>
                 <p>Empower the youth</p>
                 <p>Here are few options: By offering scholarships, donations or hire from our set of talents </p>
-                <button href='/' className='button'><b>Hire our Talent</b></button>
+                <button href='/' className='button'><b>Hire Talent</b></button>
             </div>
         </div>
     )
