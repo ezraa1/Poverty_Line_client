@@ -2,14 +2,16 @@ import React from "react";
 import "./Donations.css";
 import education from "./images/education.jpg";
 import food from './images/food.jpg';
-import sick from "./images/sick.jpg"
+import sick from "./images/sick.jpg";
+
 
 
 const Donations = () => {
+  
 
   return (
     
-    <div className="donations-page">
+    <div className="donations">
       <div className="heading">
       <h2>Donations</h2>
       <span className='line'></span>

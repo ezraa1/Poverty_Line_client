@@ -1,17 +1,19 @@
 .btn-donations {
     display: grid;
     grid-template-columns: repeat(3,1fr);;
-    margin: 0 5px;
+    margin: auto;
     text-align: center;
-       
-    
 }
 .heading{
     text-align: center;
     font-size: 2rem;
 }
-.donations-page{
+.donations{
     width: 100%;
+    padding-top: 4rem ;
+    
+    
+    
 }
 
 .btn-donations img{
@@ -23,6 +25,16 @@
 
 
 .btn-donations button{
-    height: 35px;
+    height: 40px;
     padding: 5px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.btn-donations button:hover {
+    background-color: var(--secondary-dark);
+    border: 1px solid var(--secondary-dark);
 }
