@@ -1,9 +1,9 @@
 import React from 'react'
-import './SignUp.css'
+import './Subscribe.css'
 
-const SignUp = () => {
+const Subscribe = () => {
     return (
-        <div className='demo' id='signup'>
+        <div className='demo' id='subscribe'>
             <div className='container'>
                 <div className='col-1'>
                     <p>More Than 100 Hiring Managers,</p>
@@ -19,4 +19,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default Subscribe
