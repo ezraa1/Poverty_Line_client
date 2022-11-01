@@ -3,7 +3,7 @@ import "./Donations.css";
 import education from "./images/education.jpg";
 import food from './images/food.jpg';
 import sick from "./images/sick.jpg";
-import DonationsForm from "./DonationsForm";
+
 
 
 
@@ -38,7 +38,7 @@ function Donations() {
       </div>
 
       </div>
-      
+
     </div>
     
   );
