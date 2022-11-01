@@ -5,7 +5,7 @@ import About from './components/About'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
 import Subscribe from './components/Subscribe'
-import Donation from './components/Donation'
+import Donations from './components/Donations'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Donation/>
+      <Donations />
       <Testimonials />
       <Subscribe />
       <Footer />

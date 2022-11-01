@@ -1,11 +1,11 @@
 import React from "react";
-import "./Donation.css";
+import "./Donations.css";
 import education from "./images/education.jpg";
 import food from './images/food.jpg';
 import sick from "./images/sick.jpg"
 
 
-function Donation() {
+const Donations = () => {
 
   return (
     
@@ -33,4 +33,4 @@ function Donation() {
   );
 }
 
-export default Donation;
+export default Donations;
