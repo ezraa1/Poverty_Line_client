@@ -1,0 +1,12 @@
+.btn-donations {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);;
+    margin: 0 10px;
+    text-align: center;
+       
+    
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+}
