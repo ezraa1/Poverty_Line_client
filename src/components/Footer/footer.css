@@ -36,7 +36,7 @@ footer a {
 
 .soshi a {
     background: black;
-    color: #0d5f0d;
+    color: #0f9abd;
     padding: 0.8rem;
     border-radius: 0.7rem;
     display: flex;
@@ -46,7 +46,7 @@ footer a {
 .soshi:hover {
     color: rgb(73, 180, 230);
     background: transparent;
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .copyright {

@@ -42,7 +42,7 @@ const Login = ( ) => {
           setSuccess("Logged in successfully!");
           setData({ email: "", password: "" });
           setTimeout(() => {
-            navigate("/dashboard", { state: user });
+            navigate("/userdashboard", { state: user });
           }, 2000);
         } else {
           setErrors(user);
@@ -103,6 +103,12 @@ const Login = ( ) => {
           className="btn btn-primary" onClick={handleSubmit}
         >
           Login
+        </button>
+        <button
+          type="submit"
+          className="btn btn-primary" onClick={handleSubmit}
+        >
+          Admin
         </button>
       </div>
 

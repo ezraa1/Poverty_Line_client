@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as  Router, Route, Routes } from "react-router-dom";
 import Login from "./Login/login";
 import Signup from "./Signup/signup";
 import Home from "./pages/Home";
@@ -7,6 +7,9 @@ import Dashboard from "./Dashboard/dashboard";
 import Form from "./Form/form"
 import Donation from "./Donation/donation";
 import Region from "./Region/region"
+import UserDash from "./UserDash/userdash";
+import Footer from "./Footer/footer";
+import UserDashboard from "./UserDashboard/userdashboard";
 
 const App = ( ) => {
   const [user, setUser] = useState(null);
@@ -44,6 +47,11 @@ const App = ( ) => {
             />
 
             <Route
+            path="/userdashboard"
+            element={<UserDashboard />}
+          />
+
+            <Route
               path="/form"
               element={<Form />}
             />
@@ -57,6 +65,16 @@ const App = ( ) => {
           path="/region"
           element={<Region />}
         />
+
+        <Route
+        path="/userdash"
+        element={<UserDash />}
+      />
+
+      <Route
+      path="/footer"
+      element={<Footer />}
+    />
               </Routes>
 
             </div>
