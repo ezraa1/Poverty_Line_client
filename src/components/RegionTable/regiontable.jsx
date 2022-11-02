@@ -34,8 +34,8 @@ const RegionTable = ( ) => {
           </tr>
           </thead>
           <tbody>
-          {data.map(( ) => (
-            <tr>
+          {data.map(( data, i) => (
+            <tr key={i}>
             <td>{data.id}</td>
             <td>{data.sub_region}</td>
             <td>{data.sub_region_code}</td>
