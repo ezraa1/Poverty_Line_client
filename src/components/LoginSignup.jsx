@@ -13,7 +13,7 @@ const LoginSignup = () => {
     
           <div className="col-xl-10 col-lg-12 col-md-9" >
     
-        <Link className="btn btn-block btn-info mt-5 rounded-0"  to="/" >Back to Homepage </Link> 
+        <Link className="btn btn-block btn-primary mt-5 rounded-0"  to="/" >Back to Homepage </Link> 
        {showLogin?( 
          <>
           <Login /> 

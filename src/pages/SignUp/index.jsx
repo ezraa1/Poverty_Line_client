@@ -58,8 +58,6 @@ const SignUp = () => {
     }
   };
 
-
-
         return (
             <div className="card o-hidden border-0 shadow-lg my-5">
               <div className="card-body p-0">
@@ -94,11 +92,9 @@ const SignUp = () => {
                         <hr/>
                       </form>
                       <hr/>
-                    
-                      <div className="text-center">
-                        <Link className="small" to="/login">Already have an account? Login!</Link>
-                      </div>
-                    </div>
+                            {/* Use the below part to output  error messages */}
+                       <div className='alert alert-danger rounded-0'>Email and Phonenumber already exist!</div>
+                                        </div>
                   </div>
                 </div>
               </div>

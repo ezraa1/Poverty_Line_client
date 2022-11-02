@@ -78,10 +78,8 @@ const Login = () => {
                            
                           </form>
                           <hr/>
-                       
-                          <div className="text-center">
-                            <Link className="small" to="/signup">Create an Account!</Link>
-                          </div>
+                          {/* Use the below part to output  error messages */}
+                          <div className='alert alert-danger rounded-0'>Incorrect username or password</div>
                         </div>
                       </div>
                     </div>
