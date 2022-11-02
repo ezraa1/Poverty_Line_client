@@ -1,7 +1,7 @@
 import React from "react";
 import "./dashboard.css";
 import {RiLogoutBoxLine} from "react-icons/ri"
-import { useNavigate } from "react-router-dom"
+import {Router, Link, useNavigate } from "react-router-dom"
 import {MdDashboard} from "react-icons/md"
 import {BiDonateBlood} from "react-icons/bi"
 import {SiTheregister} from "react-icons/si"
@@ -18,13 +18,14 @@ const Dashboard = ( ) => {
 
 
     return (
+
         <div className="board">
         <div className="dash">
         <h1>Admin Dashboard</h1>
         <h3> <RiLogoutBoxLine onClick={handleClick}/>Logout</h3>
         <ul>
              <li>
-             <NavLink to="/form"><a href=""><div className="icon"><MdDashboard /></div>Add users</a></NavLink>
+             <Link to="/"><a href=""><div className="icon"><MdDashboard /></div>Add users</a></Link>
              </li>
              <li>
              <NavLink to="/"> <a href=""><div className="icon"><BiDonateBlood /></div>Add donation</a></NavLink>

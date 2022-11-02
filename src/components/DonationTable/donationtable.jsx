@@ -6,6 +6,7 @@ import {MdDelete} from "react-icons/md"
 const DonationTable = ( ) => {
   const [data, setData] = useState([])
 
+
   useEffect(() => {
     const url = "https://poverty-line-api.herokuapp.com/donations"
     fetch(url)

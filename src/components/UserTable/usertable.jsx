@@ -47,8 +47,8 @@ const UserTable = ( ) => {
           </tr>
           </thead>
           <tbody>
-          {data.map(( ) => (
-            <tr>
+          {data.map(( data, i) => (
+            <tr key={i}>
             <td>{data.id}</td>
             <td>{data.full_name}</td>
             <td>{data.email}</td>
