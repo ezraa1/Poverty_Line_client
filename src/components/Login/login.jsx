@@ -83,7 +83,7 @@ const Login = ( ) => {
             ) : null}
        <h3>Back to Homepage</h3>
             <h1>WELCOME BACK!</h1>
-            <img src={IMG} alt="Logo Image" />
+            <img src={IMG} alt="Logo " />
                 </div>
 
             <div className="form">
