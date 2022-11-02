@@ -30,8 +30,8 @@ const DonationTable = ( ) => {
           </tr>
           </thead>
           <tbody>
-          {data.map(( ) => (
-            <tr>
+          {data.map((data, i) => (
+            <tr key={i}>
             <td>{data.user_id}</td>
             <td>{data.donation_name}</td>
             <td>{data.description}</td>

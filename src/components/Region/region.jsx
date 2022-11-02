@@ -1,4 +1,6 @@
-import React, {useState, useNavigate} from "react";
+import React, {useState} from "react";
+import "./region.css"
+import { useNavigate } from "react-router-dom"
 
 const Region = ( ) => {
     const [data, setData] = useState({
@@ -24,7 +26,7 @@ const Region = ( ) => {
       const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-          const response = await fetch("https://poverty-line-api.herokuapp.com/signup", {
+          const response = await fetch("https://poverty-line-api.herokuapp.com/regions", {
             method: "POST",
             headers: {
               "Content-Type": "application/json;charset=utf-8",
