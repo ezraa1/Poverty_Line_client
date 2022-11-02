@@ -1,11 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, Fragment} from "react";
 import "./donationtable.css"
 import {AiFillEdit} from "react-icons/ai"
 import {MdDelete} from "react-icons/md"
+import EditDonation from "../EditDonation/editdonation";
 
 const DonationTable = ( ) => {
   const [data, setData] = useState([])
-
+  const [editData, setEditData] = useState(null)
 
   useEffect(() => {
     const url = "https://poverty-line-api.herokuapp.com/donations"
@@ -14,6 +15,11 @@ const DonationTable = ( ) => {
         .then((data) => setData(data));
 
     } , [ ])
+
+    const handleEditClick = (event, data) =>{
+      event.preventDefault( );
+      setEditData(data.user_id);
+    }
     return (
       <div className="app-container">
         <h1>DONATION DETAILS</h1>
@@ -38,7 +44,8 @@ const DonationTable = ( ) => {
             <td>{data.donation_amount}</td>
             <td>{data.region_id}</td>
             <td>{data.country_code}</td>
-            <td><button className="btn btn-danger"><AiFillEdit /></button>
+
+            <td><button className="btn btn-danger" onClick={handleEditClick}><AiFillEdit /></button>
             <button className="btn btn-danger"><MdDelete /></button>
             </td>
             </tr>

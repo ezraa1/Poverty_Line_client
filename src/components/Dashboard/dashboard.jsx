@@ -8,7 +8,6 @@ import {SiTheregister} from "react-icons/si"
 import RegionTable from "../RegionTable/regiontable";
 import DonationTable from "../DonationTable/donationtable";
 import UserTable from "../UserTable/usertable";
-import UserDashboard from "../UserDashboard/userdashboard";
 
 const Dashboard = ( ) => {
     const navigate = useNavigate();
@@ -37,7 +36,6 @@ const Dashboard = ( ) => {
         <UserTable />
         <RegionTable />
         <DonationTable />
-        <UserDashboard />
         </div>
         </div>
 
