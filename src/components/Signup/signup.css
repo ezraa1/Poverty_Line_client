@@ -22,7 +22,11 @@ body {
     width: 20vw;
     margin: 0 auto;
 }
+.log{
+    background-color: lightblue;
+}
 
 .form input {
     font-size: 1rem;
 }
+

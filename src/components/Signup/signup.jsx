@@ -12,6 +12,8 @@ const Signup = ( ) => {
       country:"",
       phone:"",
       password: "",
+      telephone_number: "",
+      skills: "",
     })
 
     const [errors, setErrors] = useState(null);
@@ -40,6 +42,7 @@ const Signup = ( ) => {
           setUser(user);
           setSuccess("Signup is successfull!");
           setData({
+      fullname: "",
       firstname:"",
       lastname:"",
       fullname: "",
@@ -47,7 +50,9 @@ const Signup = ( ) => {
       country:"",
       phone:"",
       password: "",
-
+      usertype: "",
+      telephone_number: "",
+      skills: "",
           });
 
           setTimeout(() => {
@@ -94,7 +99,7 @@ const Signup = ( ) => {
             ) : null}
 
         <h1>SIGN UP</h1>
-        <img src={IMG} alt="Logo Image" />
+        <img src={IMG} alt="Logo" />
         </div>
 
         <div className="signup">
@@ -117,10 +122,14 @@ const Signup = ( ) => {
         value={data.email}/>
         <input type="text" name="country" placeholder="Kenya..........." required   onChange={handleChange}
           value={data.country}/>
+        {/*<input type="text" name="country" placeholder="Kenya..........." required   onChange={handleChange}
+          value={data.country}/>*/}
         <input type="tel" name="phone" placeholder="+254 123 456 789........." required   onChange={handleChange}
         value={data.phone}/>
         <input type="password" name="password" placeholder="Enter you password............" required   onChange={handleChange}
         value={data.password} />
+          <input type="text" name="skills" placeholder="Enter your skill................" required  onChange={handleChange}
+              value={data.skills}  /> 
         {/*<input type="confirmpassword" name="confirmpassword" placeholder="Confirm password............" required   onChange={handleChange}
       value={data.confirmpassword} />*/}
 
