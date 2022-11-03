@@ -5,7 +5,6 @@ import Form from "./Form/form"
 import Donation from "./Donation/donation";
 import Region from "./Region/region"
 import UserDash from "./UserDash/userdash";
-import Footer from "./Footer/footer";
 import UserDashboard from "./UserDashboard/userdashboard";
 
 const App = ( ) => {
@@ -55,10 +54,6 @@ const App = ( ) => {
         element={<UserDash />}
       />
 
-      <Route
-      path="/footer"
-      element={<Footer />}
-    />
               </Routes>
 
             </div>
