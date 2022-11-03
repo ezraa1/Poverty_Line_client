@@ -1,8 +1,8 @@
-import React, {useState, useEffect, Fragment} from "react";
+import React, {useState, useEffect} from "react";
 import "./donationtable.css"
 import {AiFillEdit} from "react-icons/ai"
 import {MdDelete} from "react-icons/md"
-import EditDonation from "../EditDonation/editdonation";
+//import EditDonation from "../EditDonation/editdonation";
 
 const DonationTable = ( ) => {
   const [data, setData] = useState([])

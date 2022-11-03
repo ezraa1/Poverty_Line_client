@@ -4,10 +4,13 @@
     font-size: 3rem;
 }
 
-input, label {
+.form-user input{
     font-weight: bolder;
 }
- .form p{
+.form-user label {
+    font-weight: bolder;
+}
+ .form-user p{
     font-style: italic;
     font-weight: bold;
     font-size: 1.5rem;
