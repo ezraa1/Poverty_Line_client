@@ -10,7 +10,7 @@ function Donations() {
 
   return (
     
-    <div className="donations">
+    <div className="donations" id="donations">
 
       <div className="heading">
       <h2>Donations</h2>
