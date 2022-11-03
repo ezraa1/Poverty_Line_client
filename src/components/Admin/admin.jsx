@@ -1,8 +1,6 @@
-import "./login.css"
 import {FaArrowLeft} from "react-icons/fa"
 import IMG from "../../assets/hand.jpg"
 import React, { useState } from "react"
-import { NavLink } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 
 const Login = ( ) => {
@@ -42,7 +40,7 @@ const Login = ( ) => {
           setSuccess("Logged in successfully!");
           setData({ email: "", password: "" });
           setTimeout(() => {
-            navigate("/userdashboard", { state: user });
+            navigate("/dashboard", { state: user });
           }, 2000);
         } else {
           setErrors(user);
@@ -102,23 +100,8 @@ const Login = ( ) => {
           type="submit"
           className="btn btn-primary" onClick={handleSubmit}
         >
-          Login
+          Admin
         </button>
-      </div>
-
-
-      <div className="signup">
-        <h3>Have no account? </h3>
-        <NavLink to="/signup">
-        <button type="submit" className="btn">
-            Sign Up
-          </button>
-          </NavLink>
-          <NavLink to="/admin">
-        <button type="submit" className="btn">
-            Admin
-          </button>
-          </NavLink>
         </div>
         </div>
     )

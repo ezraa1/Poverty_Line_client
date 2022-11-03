@@ -1,5 +1,5 @@
 body {
-    background-image: url("../../assets/login.jpg");
+    background-image: url("../../assets/blue1.jpg");
     text-align: center;
     height: 100vh;
     overflow-y: auto;
@@ -7,7 +7,7 @@ body {
 }
 .sign h1 {
     font-size: 5rem;
-    color: white;
+    color: black;
 }
 
 .par {
@@ -22,8 +22,10 @@ body {
     width: 20vw;
     margin: 0 auto;
 }
+
 .log{
     background-color: lightblue;
+    margin-top: 150px;
 }
 
 .form input {

@@ -3,14 +3,17 @@
   text-align: left;
   font-size: 30px;
 }
-
+.nav {
+  margin-top: 150px;
+}
 .bar h3{
     text-align: left;
+    color: black;
 }
 
 .bar h1 {
     font-size: 5rem;
-    color: white;
+    color: black;
 }
 
 .bar img {
@@ -60,6 +63,7 @@ form {
 
   .signup h3 {
     font-style: italic;
+    color: black;
   }
 
   .signup  {

@@ -1,4 +1,7 @@
 .arrow:hover {
     cursor: pointer;
-    color: rgb(255, 255, 255);
+    color: black;
+}
+.app-container {
+    margin-top: 150px;
 }
