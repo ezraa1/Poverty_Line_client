@@ -7,8 +7,12 @@ import Footer from './components/Footer'
 import Subscribe from './components/Subscribe'
 import Donations from './components/Donations'
 
+
 function App() {
   return (
+    
+       
+       
     <div>
       <Navbar />
       <Hero />
@@ -17,7 +21,13 @@ function App() {
       <Testimonials />
       <Subscribe />
       <Footer />
+
+       
+      
+      
     </div>
+    
+    
   );
 }
 

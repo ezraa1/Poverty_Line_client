@@ -32,7 +32,7 @@ const Navbar = () => {
                     </li>
                     
                     <li className='nav-item'>
-                    <a href='#donations' spy="true" smooth="true" offset={50} duration={500} onClick={closeMenu}>Donations</a>
+                    <a href='#donate' spy="true" smooth="true" offset={50} duration={500} onClick={closeMenu}>Donations</a>
                     </li>
                     <li className='nav-item'>
                     <a href='#testimonials' spy="true" smooth="true" offset={-100} duration={500} onClick={closeMenu}>Testimonials</a>
