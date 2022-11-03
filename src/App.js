@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as  Router, Route, Routes } from "react-router-dom";
-import Dashboard from "./Dashboard/dashboard";
-import Form from "./Form/form"
-import Donation from "./Donation/donation";
-import Region from "./Region/region"
-import UserDash from "./UserDash/userdash";
-import UserDashboard from "./UserDashboard/userdashboard";
+import {Routes, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard/dashboard";
+import Form from "./components/Form/form"
+import Donation from "./components/Donation/donation";
+import Region from "./components/Region/region"
+import UserDash from "./components/UserDash/userdash";
+import UserDashboard from "./components/UserDashboard/userdashboard";
 
 const App = ( ) => {
   const [user, setUser] = useState(null);
@@ -21,9 +21,6 @@ const App = ( ) => {
         <div className="App">
 
             <Routes>
-
-
-
               <Route
               path="/dashboard"
               element={<Dashboard />}
