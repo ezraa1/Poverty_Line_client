@@ -34,15 +34,10 @@ const App = ( ) => {
               <Route  path="/login"  element={<Login/>}  />
               <Route  path="/contact" element={<Contact />} />
 
-
         </Routes>
 
           </div>
   )
-
 }
 
-
 export default App;
-
-
