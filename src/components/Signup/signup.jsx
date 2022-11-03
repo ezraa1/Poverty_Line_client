@@ -9,6 +9,8 @@ const Signup = ( ) => {
       email: "",
       password: "",
       usertype: "",
+      telephone_number: "",
+      skills: "",
     })
 
     const [errors, setErrors] = useState(null);
@@ -37,10 +39,12 @@ const Signup = ( ) => {
           setUser(user);
           setSuccess("Signup is successfull!");
           setData({
-            fullname: "",
+      fullname: "",
       email: "",
       password: "",
       usertype: "",
+      telephone_number: "",
+      skills: "",
           });
 
           setTimeout(() => {
@@ -110,10 +114,12 @@ const Signup = ( ) => {
         value={data.email}/>
         {/*<input type="text" name="country" placeholder="Kenya..........." required   onChange={handleChange}
           value={data.country}/>*/}
-        {/*<input type="tel" name="phone" placeholder="+254 123 456 789........." required   onChange={handleChange}
-        value={data.phone}/>*/}
+        <input type="tel" name="phone" placeholder="+254 123 456 789........." required   onChange={handleChange}
+        value={data.phone}/>
         <input type="password" name="password" placeholder="Enter you password............" required   onChange={handleChange}
         value={data.password} />
+          <input type="text" name="skills" placeholder="Enter your skill................" required  onChange={handleChange}
+              value={data.skills}  /> 
 
         <fieldset>
         <legend>Select:</legend>
