@@ -10,12 +10,12 @@ const Navbar = () => {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
 
-    const closeMenu = () => setClick(false)
+   
 
     return (
         <div className='header'>
             <nav className='navbar'>
-                <a href='/' className='logo'>
+                <a href='/hero' className='logo'>
                     <h3>POVERTYLINE</h3>
 
                 </a>
@@ -37,10 +37,6 @@ const Navbar = () => {
                     <li className='nav-item'>
                     <Link  to="/donations">Donations</Link> 
                     {/* <a href='/#donations' spy="true" smooth="true" offset={50} duration={500} onClick={closeMenu}>Donations</a> */}
-                    </li>
-                    <li className='nav-item'>
-                    <Link  to="/testimonials">Testimonials</Link> 
-                    {/* <a href='/#subscribe' spy="true" smooth="true" offset={-100} duration={500} onClick={closeMenu}>Subscription</a> */}
                     </li>
                     <li className='nav-item'>
                     <Link  to="/subscribe">Subscription</Link> 
