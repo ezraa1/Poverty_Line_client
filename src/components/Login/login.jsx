@@ -86,7 +86,7 @@ const Login = ( ) => {
             <img src={IMG} alt="Logo" />
                 </div>
 
-            <div className="form-login">
+            <div className="form">
             <form onSubmit= {handleSubmit} >
               <input className="login-input" type="text" name="email" placeholder="Enter Email.................." required
             value={data.email}
@@ -100,21 +100,13 @@ const Login = ( ) => {
         <div className="button">
         <button
           type="submit"
-          className="btn-primary-login" onClick={handleSubmit}
+          className="btn btn-primary" onClick={handleSubmit}
         >
           Login
         </button>
         </div>
-        <div className="signup">
-        <button
-          type="submit"
-          className="btn btn-primary" onClick={handleSubmit}
-        >
-          Admin
-        </button>
-      </div>
 
-      <div className="signup-direct">
+      <div className="signup">
         <h3>Have no account? </h3>
         <NavLink to="/signup">
         <button type="submit" className="btn-signup-direct">
