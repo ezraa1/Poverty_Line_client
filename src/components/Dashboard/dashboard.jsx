@@ -27,7 +27,7 @@ const Dashboard = ( ) => {
              <NavLink to="/form"><a href="Add Users"><div className="icon"><MdDashboard /></div>Add Users</a></NavLink>
              </li>
              <li>
-             <NavLink to="/donation"> <a href="Add Donation"><div className="icon"><BiDonateBlood /></div>Add donation</a></NavLink>
+             <NavLink to="/donationform"> <a href="Add Donation"><div className="icon"><BiDonateBlood /></div>Add donation</a></NavLink>
              </li>
              <li>
              <NavLink to="/region"><a href="Add Region"><div className="icon"><SiTheregister /></div>Add Region</a></NavLink>

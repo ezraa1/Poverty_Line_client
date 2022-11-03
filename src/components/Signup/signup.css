@@ -6,12 +6,11 @@ body {
 }
 
 .sign-up {
-    background-color: lightblue;
     text-align: center;
     height: 100vh;
     overflow-y: auto;
     background-size: cover;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 .sign h1 {
     font-size: 5rem;
@@ -50,4 +49,5 @@ body {
   font-weight: bold;
   border-radius: 30px;
   transition: transform 0.4s;
+  text-align: center;
 }
