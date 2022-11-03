@@ -8,15 +8,6 @@ import UserDash from "./components/UserDash/userdash";
 import UserDashboard from "./components/UserDashboard/userdashboard";
 
 const App = ( ) => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    fetch("/me").then((response) => {
-      if (response.ok) {
-        response.json().then((user) => setUser(user));
-      }
-    });
-  }, []);
   return(
         <div className="App">
 
