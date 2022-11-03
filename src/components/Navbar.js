@@ -3,6 +3,11 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 
+
+
+
+
+
 import './Navbar.css'
 
 const Navbar = () => {
