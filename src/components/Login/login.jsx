@@ -48,7 +48,7 @@ const Login = ( ) => {
     };
 
     return(
-        <div className="nav">
+        <div className="nav-login">
         <div className="arrow">
         <FaArrowLeft />
         </div>

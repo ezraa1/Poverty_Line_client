@@ -25,11 +25,11 @@ const Subscribe = () => {
             <div className='container'>
                 <div className='col-1'>
                     <p>More Than 100 Hiring Managers,</p>
-                    <p>hire our talent</p>
+                    <p>Hire Talent</p>
                     <p>Be informed each time we have top talent</p>
                     <form ref={form} onSubmit= {handleSubmit} className='form-j'>
                     <input className='field-name' type='email' placeholder='Enter your Email address' name='user_email' /> <br />
-                    <button className='btn-j' onSubmit={handleSubmit}>Subscribe</button> <br />
+                    <button className='btn-j' onSubmit={handleSubmit}>SUBSCRIBE</button> <br />
                    <h2> {done && "Subscribed successfully..................."}</h2>
                 </form>
                 </div>

@@ -10,7 +10,13 @@
 }
 .donations{
     width: 100%;
-    padding-top: 4rem ;   
+    height: 50vh;
+    padding-top: 100px;
+    position: relative;
+    margin: 0;
+
+    
+    
 }
 
 .btn-donations img{
