@@ -1,8 +1,8 @@
 import React from 'react'
 import  './Contact.css'
-import Phone from '../pages/img/phone.jpg'
-import Email from '../pages/img/email.jpg'
-import Address from "../pages/img/address.jpg"
+import Phone from './img/phone.jpg'
+import Email from './img/email.jpg'
+import Address from "./img/address.jpg"
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { useState } from 'react'
@@ -30,7 +30,7 @@ const Contact = () => {
         <div className='contact-bg'></div>
         <div className='contact-wrapper'>
             <div className='contact-left'>
-                <h3 className='contact-title'>You can can email, call us or visit our offices</h3>
+                
                 <div className='contact-info'>
                 <div className='contact-info-item'>
                         <img src={Phone} alt='' className='contact-icon'/>
@@ -47,16 +47,14 @@ const Contact = () => {
                 </div>
             </div>
             <div className='contact-right'>
-                <p className='contact-desc'>
-                    Feel free to message us For enquires
-                </p>
-                <form ref={form} onSubmit= {handleSubmit}>
-                    <input type='text' placeholder='Name' name='user_name' /> <br />
-                    <input type='text' placeholder='Subject' name='user_subject' /><br />
-                    <input type='text' placeholder='Email' name='user_email' />
-                    <textarea placeholder='Message' name='message' rows='5'/>
-                    <button>Submit</button> <br />
-                   <h2> {done && "Sumitted successfully..................."}</h2>
+            <h3 className='contact-title'><b>GET IN TOUCH</b></h3>
+                <form className='contact-form' ref={form} onSubmit= {handleSubmit}>
+                    <input className='contact-input' type='text' placeholder='Name' name='user_name' /> <br />
+                    <input className='contact-input' type='text' placeholder='Phone Number' name='user_phone' /><br />
+                    <input className='contact-input' type='text' placeholder='Email' name='user_email' />
+                    <textarea className='contact-textarea' placeholder='Write your message here...' name='message' rows='5'/>
+                    <button className='submit-contact'><b>SUBMIT</b></button> <br />
+                   <h2 className='contact-done'> {done && "Sumitted successfully..................."}</h2>
                 </form>
             </div>
         </div>

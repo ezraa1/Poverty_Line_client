@@ -96,7 +96,7 @@ form {
   transition: transform 0.4s;
 }
 
-input {
+.login-input {
     text-align: center;
     width: 20%;
     padding: 0.5rem;
