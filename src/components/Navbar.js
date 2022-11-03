@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 
+
 import './Navbar.css'
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className='header'>
             <nav className='navbar'>
                 <a href='/hero' className='logo'>
-                    <h3>POVERTYLINE</h3>
+                    <h3 className='poverty-line'>POVERTYLINE</h3>
 
                 </a>
                 <div className='hamburger' onClick={handleClick}>
@@ -27,8 +28,10 @@ const Navbar = () => {
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
                     <Link  to="/hero">Home</Link> 
+                    
                     {/* <a href='/#hero' spy="true" smooth="true" offset={-100} duration={500} onClick={closeMenu}>Home</a> */}
                     </li>
+                    
                     <li className='nav-item'>
                     <Link  to="/about">About</Link> 
                     {/* <a href='/#about' spy="true" smooth="true" offset={50} duration={500} onClick={closeMenu}>About</a> */}

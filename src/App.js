@@ -9,6 +9,8 @@ import Signup from "./components/Signup/signup";
 import Donations from "./components/Donations";
 import Subscribe from "./components/Subscribe";
 import About from "./components/About";
+import Donform from './components/Donform';
+
  const App = ( ) => {
   return (
     
@@ -18,6 +20,7 @@ import About from "./components/About";
 
 <Navbar/>
 
+
 <Routes>
               <Route   path="/hero"   element={<Hero/> }   />
               <Route   path="/signup"   element={<Signup/>}   />
@@ -25,6 +28,7 @@ import About from "./components/About";
               <Route    path="/subscribe"  element={<Subscribe/>}  /> 
               <Route    path="/about"  element={<About/>}  /> 
               <Route    path="/login"  element={<Login/>}  /> 
+              <Route path ="/donations/donate" element={<Donform /> } />
               </Routes>
     </div>
     
