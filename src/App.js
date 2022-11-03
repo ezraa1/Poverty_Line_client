@@ -14,6 +14,7 @@ import Donations from "./components/Donations";
 import Subscribe from "./components/Subscribe";
 import About from "./components/About";
 import Contact from "./components/Contact"
+import Admin from "./components/Admin/admin"
 
 const App = ( ) => {
   return(
@@ -33,6 +34,7 @@ const App = ( ) => {
               <Route  path="/about"  element={<About/>}  />
               <Route  path="/login"  element={<Login/>}  />
               <Route  path="/contact" element={<Contact />} />
+              <Route  path="/admin" element={<Admin />} />
 
         </Routes>
 
