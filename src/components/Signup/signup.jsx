@@ -112,16 +112,21 @@ const Signup = ( ) => {
         value={data.fullname} />
         <input type="email" name="email" placeholder="Enter you email............" required   onChange={handleChange}
         value={data.email}/>
+         <input type="password" name="password" placeholder="Enter you password............" required   onChange={handleChange}
+        value={data.password} />
+        <input type="text" name="usertype" placeholder="Enter 1 for regular, 2 for admin................" required  onChange={handleChange}
+              value={data.usertype}  />
         {/*<input type="text" name="country" placeholder="Kenya..........." required   onChange={handleChange}
           value={data.country}/>*/}
-        <input type="tel" name="phone" placeholder="+254 123 456 789........." required   onChange={handleChange}
-        value={data.phone}/>
-        <input type="password" name="password" placeholder="Enter you password............" required   onChange={handleChange}
-        value={data.password} />
+        <input type="tel" name="telephone_number" placeholder="+254 123 456 789........." required   onChange={handleChange}
+        value={data.telephone_number}/>
+       
           <input type="text" name="skills" placeholder="Enter your skill................" required  onChange={handleChange}
               value={data.skills}  /> 
 
-        <fieldset>
+
+
+        {/* <fieldset>
         <legend>Select:</legend>
 
             <div>
@@ -133,7 +138,7 @@ const Signup = ( ) => {
           <input type="radio" id="admin" name="drone" value="admin" />
           <label for="admin">admin</label>
         </div>
-    </fieldset>
+    </fieldset> */}
         {/*<input type="confirmpassword" name="confirmpassword" placeholder="Confirm password............" required   onChange={handleChange}
       value={data.confirmpassword} />*/}
 
