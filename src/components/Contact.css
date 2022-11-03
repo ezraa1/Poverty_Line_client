@@ -1,7 +1,8 @@
 .contact{
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: relative;
-    
+    background-color: whitesmoke;
 }
 
 .contact-wrapper{
@@ -47,7 +48,7 @@
 
 
 .contact-form {
-    margin-top: 10px;
+    margin-top: 5px;
     
   }
 .contact-done{
@@ -62,7 +63,6 @@
     height: 70px;
     border: ridge;
     box-shadow: 3px 3px black;
-    margin: 10px 0px;
     padding-left: 10px;
     border-radius: 10px;
 

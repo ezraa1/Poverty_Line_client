@@ -60,7 +60,7 @@ const Signup = ( ) => {
     };
 
     return(
-        <div className="log">
+        <div className="sign-up">
             <div className="sign">
             {errors !== null ? (
               <div

@@ -1,9 +1,8 @@
 .demo {
-    margin: 5rem auto;
-    padding: 1rem;
+    padding-top: 10px;
     width: 100%;
     background-color: whitesmoke;
-    height: 100vh;
+    height: 100%;
 }
 
 .demo .container {

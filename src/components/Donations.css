@@ -8,15 +8,14 @@
     text-align: center;
     font-size: 2rem;
 }
-.donations{
+.donations-page{
     width: 100%;
-    padding-top: 4rem ;   
     background-color: whitesmoke;
-    height: 100vh;
+    height: 100%;
 }
 
 .btn-donations img{
-    max-width: 100%;
+    width: 100%;
     height: 60%;
     padding: 1rem;
 

@@ -1,28 +1,35 @@
 .about {
     background-color: whitesmoke;
     margin: auto;
-    padding: 2rem 1rem 0 1rem;
+    padding: 1rem 2rem 0 1rem;
     width: 100%;
+    height: 100%;
+}
+.header-did{
+    padding: 2rem 2rem 1rem 2rem;
+    
 }
 
 .about .container {
-    width: 1240px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.about h2 {
+.header-about {
     font-size: 3rem;
 }
 
 .about .col-2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 3rem;
+    
 }
+
+
 
 
 .about button {
@@ -40,7 +47,8 @@
 
     .about .container img {
         padding: 0rem;
-        width: 90vw;
+        width: 100%;
+        height: 100%;
     }
 
     .about .container .col-2 {

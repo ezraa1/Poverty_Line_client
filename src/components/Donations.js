@@ -21,7 +21,7 @@ function Donations() {
 
   return (
     
-    <div className="donations" id="donate">
+    <div className="donations-page" id="donate">
 
       <div className="heading">
       <h2>Donations</h2>
