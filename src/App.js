@@ -7,7 +7,6 @@ import Login from "./components/Login/login";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup/signup";
 import Donations from "./components/Donations";
-import Testimonials from "./components/Testimonials";
 import Subscribe from "./components/Subscribe";
 import About from "./components/About";
  const App = ( ) => {
@@ -20,7 +19,6 @@ import About from "./components/About";
               <Route   path="/hero"   element={<Hero/> }   />
               <Route   path="/signup"   element={<Signup/>}   />
               <Route   path="/donations"   element={<Donations/>}   />
-              <Route   path="/testimonials"   element={<Testimonials/>}   />
               <Route    path="/subscribe"  element={<Subscribe/>}  /> 
               <Route    path="/about"  element={<About/>}  /> 
               <Route    path="/login"  element={<Login/>}  /> 

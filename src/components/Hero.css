@@ -54,6 +54,7 @@
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     color: #333;
+    align-items: center;
 }
 
 .hero .button:hover {
