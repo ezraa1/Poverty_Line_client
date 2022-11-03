@@ -6,7 +6,6 @@ import IMG from "../../assets/two.jpg"
 import "./userdashboard.css"
 import {BiDonateBlood} from "react-icons/bi"
 import {FaStreetView} from "react-icons/fa"
-import Footer from "../Footer/footer";
 
 const UserDashboard = ( ) => {
     const navigate = useNavigate();
@@ -47,7 +46,7 @@ const UserDashboard = ( ) => {
             has succeeded in rising to. Her mission is health care for all.</p>
             <h2>POVERTY LINE</h2>
       </div>
-      <Footer />
+
         </div>
 
     )
