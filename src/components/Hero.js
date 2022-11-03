@@ -37,7 +37,8 @@ const Hero = () => {
                     </span>
                 </p>
                 <p>Here are few options: You can offer scholarships, donations or hire from our set of talents </p>
-                <button href='/' className='button'><b>Hire Talent</b></button>
+                
+                <a href="/hero" target="_blank" className='button' rel="noopener noreferrer"><b>Hire Talent</b></a>
             </div>
         </div>
     )

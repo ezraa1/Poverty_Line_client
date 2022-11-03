@@ -10,13 +10,9 @@
 }
 .donations{
     width: 100%;
-    height: 100;
-    padding-bottom: 0px;
-    position: relative;
-    margin: auto;
-
-    
-    
+    padding-top: 4rem ;   
+    background-color: whitesmoke;
+    height: 100vh;
 }
 
 .btn-donations img{

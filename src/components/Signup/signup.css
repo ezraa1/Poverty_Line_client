@@ -16,10 +16,5 @@
     margin: 0 auto;
 }
 .log{
-    background-image: url("../../assets/login.jpg");
-    text-align: center;
-    height: 100vh;
-    overflow-y: auto;
-    background-size: cover;
-
+    background-color: lightblue;
 }
