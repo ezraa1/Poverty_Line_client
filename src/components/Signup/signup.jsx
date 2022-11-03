@@ -5,10 +5,13 @@ import IMG from "../../assets/hand.jpg"
 
 const Signup = ( ) => {
     const [data, setData] = useState({
+      firstname:"",
+      lastname:"",
       fullname: "",
       email: "",
+      country:"",
+      phone:"",
       password: "",
-      usertype: "",
       telephone_number: "",
       skills: "",
     })
@@ -40,7 +43,12 @@ const Signup = ( ) => {
           setSuccess("Signup is successfull!");
           setData({
       fullname: "",
+      firstname:"",
+      lastname:"",
+      fullname: "",
       email: "",
+      country:"",
+      phone:"",
       password: "",
       usertype: "",
       telephone_number: "",
@@ -104,14 +112,16 @@ const Signup = ( ) => {
         </div>
       <div className="form">
       <form onSubmit={handleSubmit}>
-        { /* <input type="text" name="firstname" placeholder="Enter your firstname................" required  onChange={handleChange}
-              value={data.firstname}  /> */}
-       {/* <input type="text" name="lastname" placeholder="Enter your lastname................" required   onChange={handleChange}
-            value={data.lastname} /> */}
+                      <input type="text" name="firstname" placeholder="Enter your firstname................" required  onChange={handleChange}
+              value={data.firstname}  />
+       <input type="text" name="lastname" placeholder="Enter your lastname................" required   onChange={handleChange}
+            value={data.lastname} />
         <input type="text" name="fullname" placeholder="Enter your fullname................" required   onChange={handleChange}
         value={data.fullname} />
         <input type="email" name="email" placeholder="Enter you email............" required   onChange={handleChange}
         value={data.email}/>
+        <input type="text" name="country" placeholder="Kenya..........." required   onChange={handleChange}
+          value={data.country}/>
         {/*<input type="text" name="country" placeholder="Kenya..........." required   onChange={handleChange}
           value={data.country}/>*/}
         <input type="tel" name="phone" placeholder="+254 123 456 789........." required   onChange={handleChange}
@@ -120,20 +130,6 @@ const Signup = ( ) => {
         value={data.password} />
           <input type="text" name="skills" placeholder="Enter your skill................" required  onChange={handleChange}
               value={data.skills}  /> 
-
-        <fieldset>
-        <legend>Select:</legend>
-
-            <div>
-          <input type="radio" id="regular" name="drone" value="regular" />
-          <label for="regular">regular</label>
-        </div>
-
-        <div>
-          <input type="radio" id="admin" name="drone" value="admin" />
-          <label for="admin">admin</label>
-        </div>
-    </fieldset>
         {/*<input type="confirmpassword" name="confirmpassword" placeholder="Confirm password............" required   onChange={handleChange}
       value={data.confirmpassword} />*/}
 
