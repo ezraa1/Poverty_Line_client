@@ -5,6 +5,14 @@ body {
     overflow-y: auto;
     background-size: cover;
 }
+
+.sign-up {
+    background-color: lightblue;
+    text-align: center;
+    height: 100vh;
+    overflow-y: auto;
+    background-size: cover;
+}
 .sign h1 {
     font-size: 5rem;
     color: black;

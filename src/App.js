@@ -10,9 +10,10 @@ import Hero from "./components/Hero";
 import Login from "./components/Login/login";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup/signup";
-import Donation from "./components/Donations";
+import Donations from "./components/Donations";
 import Subscribe from "./components/Subscribe";
 import About from "./components/About";
+import Contact from "./components/Contact"
 
 const App = ( ) => {
   return(
@@ -22,22 +23,26 @@ const App = ( ) => {
               <Route  path="/dashboard" element={<Dashboard />} />
               <Route  path="/userdashboard" element={<UserDashboard />} />
               <Route  path="/form" element={<Form />} />
-              <Route   path="/donation"  element={<Donation />} />
-               <Route path="/region" element={<Region />} />
-              <Route path="/userdash" element={<UserDash />}/>
-              <Route   path="/hero"   element={<Hero/> }   />
-              <Route   path="/signup"   element={<Signup/>}   />
-              <Route   path="/donations"   element={<Donation/>}   />
-              <Route    path="/subscribe"  element={<Subscribe/>}  />
-              <Route    path="/about"  element={<About/>}  />
-              <Route    path="/login"  element={<Login/>}  />
+              <Route  path="/donations/donate"  element={<DonationForm />} />
+              <Route  path="/regions" element={<Region />} />
+              <Route  path="/userdash" element={<UserDash />}/>
+              <Route  path="/hero"   element={<Hero/> }   />
+              <Route  path="/signup"   element={<Signup/>}   />
+              <Route  path="/donations"   element={<Donations/>}   />
+              <Route  path="/subscribe"  element={<Subscribe/>}  />
+              <Route  path="/about"  element={<About/>}  />
+              <Route  path="/login"  element={<Login/>}  />
+              <Route  path="/contact" element={<Contact />} />
+
 
         </Routes>
 
           </div>
   )
+
 }
 
-export default App
+
+export default App;
 
 

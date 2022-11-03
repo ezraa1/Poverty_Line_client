@@ -104,6 +104,8 @@ const Login = ( ) => {
         >
           Login
         </button>
+        </div>
+        <div className="signup">
         <button
           type="submit"
           className="btn btn-primary" onClick={handleSubmit}
@@ -112,7 +114,7 @@ const Login = ( ) => {
         </button>
       </div>
 
-      <div className="signup">
+      <div className="signup-direct">
         <h3>Have no account? </h3>
         <NavLink to="/signup">
         <button type="submit" className="btn-signup-direct">
