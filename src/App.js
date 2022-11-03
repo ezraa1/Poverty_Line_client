@@ -9,8 +9,7 @@ import UserDashboard from "./components/UserDashboard/userdashboard";
 
 const App = ( ) => {
   return(
-        <div className="App">
-
+        <div >
             <Routes>
               <Route
               path="/dashboard"
