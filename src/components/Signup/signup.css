@@ -1,5 +1,5 @@
 body {
-    background-image: url("../../assets/blue1.jpg");
+    background-image: url("../../assets/login.jpg");
     text-align: center;
     height: 100vh;
     overflow-y: auto;
@@ -22,13 +22,13 @@ body {
     width: 20vw;
     margin: 0 auto;
 }
-
 .log{
     background-color: lightblue;
-    margin-top: 150px;
 }
 
-.form input {
+.form-signup input {
     font-size: 1rem;
+    width: 30%;
+    align-self: center;
 }
 

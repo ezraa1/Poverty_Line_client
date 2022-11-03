@@ -53,7 +53,7 @@ const Login = ( ) => {
     };
 
     return(
-        <div className="nav">
+        <div className="nav-login">
         <div className="arrow">
         <FaArrowLeft  onClick={handleClick}/>
         </div>
@@ -86,12 +86,12 @@ const Login = ( ) => {
             <img src={IMG} alt="Logo" />
                 </div>
 
-            <div className="form">
+            <div className="form-login">
             <form onSubmit= {handleSubmit} >
-            <input type="text" name="email" placeholder="Enter Email.................." required
+              <input className="login-input" type="text" name="email" placeholder="Enter Email.................." required
             value={data.email}
             onChange={handleChange}/>
-            <input type="password" name="password" placeholder="Enter Password............" required
+              <input className="login-input" type="password" name="password" placeholder="Enter Password............" required
             value={data.password}
             onChange={handleChange}/>
             </form>
@@ -100,17 +100,22 @@ const Login = ( ) => {
         <div className="button">
         <button
           type="submit"
-          className="btn btn-primary" onClick={handleSubmit}
+          className="btn-primary-login" onClick={handleSubmit}
         >
           Login
         </button>
+        <button
+          type="submit"
+          className="btn btn-primary" onClick={handleSubmit}
+        >
+          Admin
+        </button>
       </div>
-
 
       <div className="signup">
         <h3>Have no account? </h3>
         <NavLink to="/signup">
-        <button type="submit" className="btn">
+        <button type="submit" className="btn-signup-direct">
             Sign Up
           </button>
           </NavLink>
