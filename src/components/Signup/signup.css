@@ -1,3 +1,10 @@
+body {
+    background-image: url("../../assets/login.jpg");
+    text-align: center;
+    height: 100vh;
+    overflow-y: auto;
+    background-size: cover;
+}
 .sign h1 {
     font-size: 5rem;
     color: white;
@@ -18,3 +25,8 @@
 .log{
     background-color: lightblue;
 }
+
+.form input {
+    font-size: 1rem;
+}
+

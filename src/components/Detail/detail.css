@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.detail {
+  text-align: left;
+}
+
+.icon {
+    font-size: 3rem;
+}
