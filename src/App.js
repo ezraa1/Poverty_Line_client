@@ -17,6 +17,7 @@ import About from "./components/About";
 const App = ( ) => {
   return(
         <div >
+        <Navbar/>
          <Routes>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route  path="/userdashboard" element={<UserDashboard />} />
