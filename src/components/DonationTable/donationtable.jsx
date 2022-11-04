@@ -1,15 +1,15 @@
-import React, {useState, useEffect, Fragment} from "react";
+import React, {useState, useEffect} from "react";
 import "./donationtable.css"
 import {AiFillEdit} from "react-icons/ai"
 import {MdDelete} from "react-icons/md"
-import EditDonation from "../EditDonation/editdonation";
+//import EditDonation from "../EditDonation/editdonation";
 
 const DonationTable = ( ) => {
   const [data, setData] = useState([])
   const [editData, setEditData] = useState(null)
 
   useEffect(() => {
-    const url = "https://poverty-line-api.herokuapp.com/donations"
+    const url = "https://intense-scrubland-82333.herokuapp.com/donations"
     fetch(url)
     .then((r) => r.json())
         .then((data) => setData(data));

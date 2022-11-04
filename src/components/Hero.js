@@ -8,38 +8,35 @@ const Hero = () => {
             <div className='content'>
                 <p>Reach us here</p>
                 <p>Nairobi, kenya</p>
-                <p>Empower the 
-                <span>
-                        <TypeWriterEffect 
-                        textStyle={{
-                            fontFamily: 'Red Hat Display',
-                            fontWeight: 900,
-                            textAlign: 'center',
-                            fontSize: '2em',
-                        }
+                <p>Empower the
+                    <span>
+                        <TypeWriterEffect
+                            textStyle={{
+                                fontFamily: 'Red Hat Display',
+                                fontWeight: 900,
+                                textAlign: 'center',
+                                fontSize: '2em',
+                            }
 
-                        }
-                        startDelay={2000}
-                        cursorColor="#ffff"
-                        multiText={
-                            [
-                                'poor',
-                                'hustler',
-                                'needy',
-                                'kids',
-                                'youth'
-                            ]
-                        }
-                        multiTextDelay={1000}
-                        typeSpeed={50}
-                        multiTextLoop
+                            }
+                            startDelay={2000}
+                            cursorColor="#ffff"
+                            multiText={
+                                [
+                                    'poor',
+                                    'hustler',
+                                    'needy',
+                                    'kids',
+                                    'youth'
+                                ]
+                            }
+                            multiTextDelay={1000}
+                            typeSpeed={50}
+                            multiTextLoop
                         />
-
-        
-
                     </span>
                 </p>
-                <p>Here are few options: By offering scholarships, donations or hire from our set of talents </p>
+                <p>Here are few options: You can offer scholarships, donations or hire from our set of talents </p>
                 
                 <a href="/hero" target="_blank" className='button' rel="noopener noreferrer"><b>Hire Talent</b></a>
             </div>

@@ -1,7 +1,8 @@
 .header {
-    position: fixed;
+    position: sticky;
     height: 90px;
     width: 100%;
+    bottom: 0;
     top: 0;
     left: 0;
     z-index: 1;
@@ -9,7 +10,7 @@
     overflow: hidden;
     background-color: rgba(0,0,0,.9);
 }
-h3{
+.poverty-line{
     font-size: 20px;
     color: white;
     font-weight: 900;
@@ -55,6 +56,9 @@ h3{
     display: none;
 }
 
+.nav-item {
+    font-size: 1.5rem;
+}
 
 @media screen and (max-width:940px) {
     .header {

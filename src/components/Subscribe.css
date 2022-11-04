@@ -1,9 +1,8 @@
 .demo {
-    margin: 5rem auto;
-    padding: 1rem;
+    padding-top: 10px;
     width: 100%;
     background-color: whitesmoke;
-    height: 100vh;
+    height: 100%;
 }
 
 .demo .container {
@@ -43,10 +42,17 @@
 
 
 .btn-j{
-    font-size: 25px;
+    font-size: small;
+    
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    padding: 5px;
+    width: 30%;
+    margin-top: 20%;
     
 }
 .btn-j:hover{
@@ -60,6 +66,13 @@
 }
 .field-name{
     font-size: 20px;
+    height: 50px;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background: rgb(230, 230, 230);
     
 }
 

@@ -48,7 +48,7 @@ const Signup = ( ) => {
           });
 
           setTimeout(() => {
-            navigate("/footer", { state: user });
+            navigate("login", { state: user });
           }, 2000);
         } else {
           setErrors(user);
@@ -60,7 +60,7 @@ const Signup = ( ) => {
     };
 
     return(
-        <div className="log">
+        <div className="sign-up">
             <div className="sign">
             {errors !== null ? (
               <div
@@ -94,15 +94,17 @@ const Signup = ( ) => {
         <img src={IMG} alt="Logo" />
         </div>
 
+
         <div className="signup">
-        <h3>Already have an account? </h3>
+
+        <h3 className="signup-h3">Already have an account? </h3>
         <NavLink to="/login">
         <button type="submit" className="btn">
             Login
           </button>
           </NavLink>
-        </div>
-      <div className="form">
+          </div>
+      <div className="form-signup">
       <form onSubmit={handleSubmit}>
          
         <input type="text" name="full_name" placeholder="Enter your fullname................"  onChange={handleChange}
@@ -119,13 +121,9 @@ const Signup = ( ) => {
         
        
           <input type="text" name="skills" placeholder="Enter your skill................" required  onChange={handleChange}
+
               value={data.skills}  /> 
 
-
-
-
-        {/*<input type="confirmpassword" name="confirmpassword" placeholder="Confirm password............" required   onChange={handleChange}
-      value={data.confirmpassword} />*/}
 
           </form>
         </div>

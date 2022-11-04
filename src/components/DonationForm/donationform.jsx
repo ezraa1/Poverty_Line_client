@@ -1,6 +1,9 @@
 import React, {useState} from "react";
-import "./donation.css";
+import "./donationform.css";
 import { useNavigate } from "react-router-dom"
+
+import {FaArrowLeft} from "react-icons/fa"
+
 
 const Donation = ( ) => {
 
@@ -59,9 +62,14 @@ const Donation = ( ) => {
         }
       };
 
+      const handleClick =( ) =>{
+        navigate('/dashboard')
+      }
+
+
       return(
-          <div className="log">
-              <div className="sign">
+          <div className="log-donform">
+              <div className="sign-donform">
               {errors !== null ? (
                 <div
                   style={{
@@ -90,8 +98,13 @@ const Donation = ( ) => {
                 </div>
               ) : null}
           </div>
-        <div className="form">
-        <div className="tab">
+        <div className="form-don">
+
+        <div className="arrow">
+        <FaArrowLeft  onClick={handleClick}/>
+        </div>
+
+        <div className="tab-donform">
         <h1>Fill in the form below</h1>
         </div>
         <form onSubmit={handleSubmit}>
@@ -113,7 +126,7 @@ const Donation = ( ) => {
           <label>Country code</label>
           <input type="text" name="country_code" placeholder="Country code.........." required   onChange={handleChange}
           value={data.country_code}/>
-          <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
+          <button type="submit" className="btn-primary-donform" onClick={handleSubmit}>
             Submit
           </button>
               <p>“Always give without remembering and always receive without forgetting"

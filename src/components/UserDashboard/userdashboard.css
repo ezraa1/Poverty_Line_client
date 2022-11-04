@@ -1,7 +1,9 @@
 .image img {
     margin-top: 100px;
 }
-
+.board {
+    margin-top: 150px;
+}
 .image p {
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
@@ -11,10 +13,32 @@
     color: black;
     font-weight: bold;
 }
+.dash h3{
+    text-align: right;
+    font-size: 1.5rem;
+    color: black;
+}
 
 .image h2{
     color: white;
     font-size: 4rem;
     margin-top: 50px;
+    text-align: center;
 }
+
+.inner-carousel {
+    display: flex;
+}
+ .carousel {
+    cursor: grab;
+    overflow: hidden;
+    padding: 40px;
+ }
+
+ .carousel img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    pointer-events: none;
+ }
 

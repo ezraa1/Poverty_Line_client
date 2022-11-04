@@ -1,16 +1,20 @@
+
+body {
+  background-image: url(../../assets/blue1.jpg);
+}
+
 .arrow {
   margin-top: 20px;
   text-align: left;
   font-size: 30px;
 }
-
 .bar h3{
     text-align: left;
 }
 
 .bar h1 {
     font-size: 5rem;
-    color: white;
+    color: black;
 }
 
 .bar img {
@@ -18,7 +22,7 @@
     margin: 0 auto;
 }
 
-form {
+.form-login {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -33,8 +37,9 @@ form {
     cursor: pointer;
 }
 
-.btn-primary {
-    background-color:black;
+.btn-primary-login {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
     color: white;
     font-size: 1.5rem;
     font-family: "Times New Roman", Times, serif;
@@ -46,32 +51,33 @@ form {
     transition: transform 0.4s;
   }
 
-  .btn-primary:hover {
+  .btn-primary-login:hover {
     transform: scale(1.1);
     color: black;
   }
 
-  .btn:hover {
+  .btn-singup-direct:hover {
     background: #0e91c5;
     color: black;
     border-color: transparent;
     transform: scale(1.1);
   }
 
-  .signup h3 {
+  .signup-direct h3 {
     font-style: italic;
   }
 
-  .signup  {
+  .signup-direct  {
     margin: 1rem auto;
   }
 
-.signup small {
+.signup-direct small {
   font-style: italic;
 }
 
-.signup span {
+.signup-direct span {
   color: #0d5f0d;
+  
   font-style: normal;
   text-decoration: line-through;
 }
@@ -88,9 +94,9 @@ form {
   transition: transform 0.4s;
 }
 
-input {
+.form-login input {
     text-align: center;
-    width: 20%;
+    width: 50%;
     padding: 0.5rem;
     border-radius: 1.5rem;
     background: rgb(230, 230, 230);

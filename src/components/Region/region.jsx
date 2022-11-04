@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./region.css"
 import { useNavigate } from "react-router-dom"
+import {FaArrowLeft} from "react-icons/fa"
 
 const Region = ( ) => {
     const [data, setData] = useState({
@@ -58,8 +59,14 @@ const Region = ( ) => {
         }
       };
 
+      const handleClick =( ) =>{
+        navigate('/dashboard')
+      }
       return(
           <div className="log">
+          <div className="arrow">
+          <FaArrowLeft  onClick={handleClick}/>
+          </div>
               <div className="sign">
               {errors !== null ? (
                 <div

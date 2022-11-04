@@ -1,8 +1,6 @@
-import "./login.css"
 import {FaArrowLeft} from "react-icons/fa"
 import IMG from "../../assets/hand.jpg"
 import React, { useState } from "react"
-import { NavLink } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 
 const Login = ( ) => {
@@ -30,7 +28,7 @@ const Login = ( ) => {
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await fetch("hhttps://intense-scrubland-82333.herokuapp.com/login", {
+        const response = await fetch("https://poverty-line-api.herokuapp.com/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json;charset=utf-8",
@@ -42,7 +40,7 @@ const Login = ( ) => {
           setSuccess("Logged in successfully!");
           setData({ email: "", password: "" });
           setTimeout(() => {
-            navigate("/userdashboard", { state: user });
+            navigate("/dashboard", { state: user });
           }, 2000);
         } else {
           setErrors(user);
@@ -53,11 +51,9 @@ const Login = ( ) => {
     };
 
     return(
-        <div className="nav-login">
+        <div className="nav">
         <div className="arrow">
-        <NavLink to="/hero">
         <FaArrowLeft  onClick={handleClick}/>
-        </NavLink>
         </div>
             <div className="bar">
             {errors !== null ? (
@@ -88,12 +84,12 @@ const Login = ( ) => {
             <img src={IMG} alt="Logo" />
                 </div>
 
-            <div className="form-login">
+            <div className="form">
             <form onSubmit= {handleSubmit} >
-              <input className="login-input" type="text" name="email" placeholder="Enter Email.................." required
+            <input type="text" name="email" placeholder="Enter Email.................." required
             value={data.email}
             onChange={handleChange}/>
-              <input className="login-input" type="password" name="password" placeholder="Enter Password............" required
+            <input type="password" name="password" placeholder="Enter Password............" required
             value={data.password}
             onChange={handleChange}/>
             </form>
@@ -102,26 +98,10 @@ const Login = ( ) => {
         <div className="button">
         <button
           type="submit"
-          className="btn-primary-login" onClick={handleSubmit}
+          className="btn btn-primary" onClick={handleSubmit}
         >
-          Login
+          Admin
         </button>
-
-        </div>
-
-
-      <div className="signup-direct">
-        <h3>Have no account? </h3>
-        <NavLink to="/signup">
-        <button type="submit" className="btn-signup-direct">
-            Sign Up
-          </button>
-          </NavLink>
-          <NavLink to="/admin">
-        <button type="submit" className="btn">
-            Admin
-          </button>
-          </NavLink>
         </div>
         </div>
     )

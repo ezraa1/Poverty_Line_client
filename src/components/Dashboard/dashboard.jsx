@@ -24,13 +24,15 @@ const Dashboard = ( ) => {
         <h3> <RiLogoutBoxLine onClick={handleClick}/>Logout</h3>
         <ul>
              <li>
-             <NavLink to="/form"><a href=""><div className="icon"><MdDashboard /></div>Add users</a></NavLink>
+             <NavLink to="/form"><a href="Add Users"><div className="icon"><MdDashboard /></div>Add Users</a></NavLink>
              </li>
              <li>
-             <NavLink to="/donation"> <a href=""><div className="icon"><BiDonateBlood /></div>Add donation</a></NavLink>
+
+             <NavLink to="/donationform"> <a href="Add Donation"><div className="icon"><BiDonateBlood /></div>Add donation</a></NavLink>
+
              </li>
              <li>
-             <NavLink to="/region"><a href=""><div className="icon"><SiTheregister /></div>Add region</a></NavLink>
+             <NavLink to="/region"><a href="Add Region"><div className="icon"><SiTheregister /></div>Add Region</a></NavLink>
              </li>
         </ul>
         <UserTable />
