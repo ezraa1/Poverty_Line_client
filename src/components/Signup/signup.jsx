@@ -56,7 +56,7 @@ const Signup = ( ) => {
           });
 
           setTimeout(() => {
-            navigate("/footer", { state: user });
+            navigate("login", { state: user });
           }, 2000);
         } else {
           setErrors(user);
@@ -102,7 +102,7 @@ const Signup = ( ) => {
         <img src={IMG} alt="Logo" />
         </div>
 
-        <div className="signup-header">
+        <div className="signup">
         <h3 className="signup-h3">Already have an account? </h3>
         <NavLink to="/login">
         <button type="submit" className="btn">
@@ -129,7 +129,7 @@ const Signup = ( ) => {
         <input type="password" name="password" placeholder="Enter you password............" required   onChange={handleChange}
         value={data.password} />
           <input type="text" name="skills" placeholder="Enter your skill................" required  onChange={handleChange}
-              value={data.skills}  /> 
+              value={data.skills}  />
         {/*<input type="confirmpassword" name="confirmpassword" placeholder="Confirm password............" required   onChange={handleChange}
       value={data.confirmpassword} />*/}
 

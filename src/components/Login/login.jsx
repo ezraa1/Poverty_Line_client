@@ -55,7 +55,9 @@ const Login = ( ) => {
     return(
         <div className="nav-login">
         <div className="arrow">
+        <NavLink to="/hero">
         <FaArrowLeft  onClick={handleClick}/>
+        </NavLink>
         </div>
             <div className="bar">
             {errors !== null ? (
