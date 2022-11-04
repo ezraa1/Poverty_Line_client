@@ -5,14 +5,11 @@ import IMG from "../../assets/hand.jpg"
 
 const Signup = ( ) => {
     const [data, setData] = useState({
-      firstname:"",
-      lastname:"",
-      fullname: "",
+      full_name: "",
       email: "",
-      country:"",
-      phone:"",
       password: "",
-      telephone_number: "",
+      user_type: "",
+      password_confirmation: "",
       skills: "",
     })
 
@@ -30,7 +27,7 @@ const Signup = ( ) => {
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await fetch("https://poverty-line-api.herokuapp.com/signup", {
+        const response = await fetch("https://intense-scrubland-82333.herokuapp.com/signup", {
           method: "POST",
           headers: {
             "Content-Type": "application/json;charset=utf-8",
@@ -42,16 +39,11 @@ const Signup = ( ) => {
           setUser(user);
           setSuccess("Signup is successfull!");
           setData({
-      fullname: "",
-      firstname:"",
-      lastname:"",
-      fullname: "",
+      full_name: "",
       email: "",
-      country:"",
-      phone:"",
       password: "",
-      usertype: "",
-      telephone_number: "",
+      user_type: "",
+      password_confirmation: "passwordConfirmation",
       skills: "",
           });
 
@@ -114,26 +106,24 @@ const Signup = ( ) => {
           </div>
       <div className="form-signup">
       <form onSubmit={handleSubmit}>
-                      <input type="text" name="firstname" placeholder="Enter your firstname................" required  onChange={handleChange}
-              value={data.firstname}  />
-       <input type="text" name="lastname" placeholder="Enter your lastname................" required   onChange={handleChange}
-            value={data.lastname} />
-        <input type="text" name="fullname" placeholder="Enter your fullname................" required   onChange={handleChange}
-        value={data.fullname} />
+         
+        <input type="text" name="full_name" placeholder="Enter your fullname................"  onChange={handleChange}
+        value={data.full_name} />
         <input type="email" name="email" placeholder="Enter you email............" required   onChange={handleChange}
         value={data.email}/>
-        <input type="text" name="country" placeholder="Kenya..........." required   onChange={handleChange}
-          value={data.country}/>
-        {/*<input type="text" name="country" placeholder="Kenya..........." required   onChange={handleChange}
-          value={data.country}/>*/}
-        <input type="tel" name="phone" placeholder="+254 123 456 789........." required   onChange={handleChange}
-        value={data.phone}/>
-        <input type="password" name="password" placeholder="Enter you password............" required   onChange={handleChange}
+         <input type="password" name="password" placeholder="Enter you password............" required   onChange={handleChange}
         value={data.password} />
+        <input type="password" name="password_confirmation" placeholder="confirm password........." required   onChange={handleChange}
+        value={data.password_confirmation}/>
+        <input type="text" name="user_type" placeholder="Enter 1 for regular, 2 for admin................" required  onChange={handleChange}
+              value={data.user_type}  />
+        
+        
+       
           <input type="text" name="skills" placeholder="Enter your skill................" required  onChange={handleChange}
-              value={data.skills}  />
-        {/*<input type="confirmpassword" name="confirmpassword" placeholder="Confirm password............" required   onChange={handleChange}
-      value={data.confirmpassword} />*/}
+
+              value={data.skills}  /> 
+
 
           </form>
         </div>
@@ -154,3 +144,5 @@ const Signup = ( ) => {
 }
 
 export default Signup
+
+

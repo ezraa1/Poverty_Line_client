@@ -13,7 +13,7 @@ const UserDash = ( ) => {
 
 
   useEffect(() => {
-    const url = "https://poverty-line-api.herokuapp.com/users"
+    const url = "https://intense-scrubland-82333.herokuapp.com/users"
     fetch(url)
     .then((response) =>
     response.json()).then(json => {

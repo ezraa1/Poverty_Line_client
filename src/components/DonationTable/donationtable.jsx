@@ -9,7 +9,7 @@ const DonationTable = ( ) => {
   const [editData, setEditData] = useState(null)
 
   useEffect(() => {
-    const url = "https://poverty-line-api.herokuapp.com/donations"
+    const url = "https://intense-scrubland-82333.herokuapp.com/donations"
     fetch(url)
     .then((r) => r.json())
         .then((data) => setData(data));
