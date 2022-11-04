@@ -9,8 +9,6 @@ const About = () => {
 
                 <img src='https://www.adp.com/-/media/adp/resourcehub/rh2/images/faq/img/co-employment-616x308.jpg?rev=410cd764c61b4694b3784f63cfe982ab&hash=660340AD356258150721A397B0BE29CE' alt='john' width={500} height={450} />
 
-                <img src='https://images.pexels.com/photos/1340725/pexels-photo-1340725.jpeg?auto=compress&cs=tinysrgb&w=600' alt='john' width={500} height={450} />
-
                 <div className='col-2'>
                     <h2 className='header-about'>About Us</h2>
                     <span className='line'></span>
