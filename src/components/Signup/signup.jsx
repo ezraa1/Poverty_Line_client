@@ -102,7 +102,9 @@ const Signup = ( ) => {
         <img src={IMG} alt="Logo" />
         </div>
 
+
         <div className="signup">
+
         <h3 className="signup-h3">Already have an account? </h3>
         <NavLink to="/login">
         <button type="submit" className="btn">

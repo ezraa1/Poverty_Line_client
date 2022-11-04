@@ -118,10 +118,12 @@ const Form = ( ) => {
               </div>
             ) : null}
         </div>
+
       <div className="form">
       <div className="arrow">
       <FaArrowLeft  onClick={handleClick}/>
       </div>
+
       <div className="tab">
       <h1>Fill in the form below</h1>
       </div>

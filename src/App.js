@@ -14,7 +14,9 @@ import Donations from "./components/Donations";
 import Subscribe from "./components/Subscribe";
 import About from "./components/About";
 import Contact from "./components/Contact"
+
 import Admin from "./components/Admin/admin"
+
 
 const App = ( ) => {
   return(
@@ -30,6 +32,7 @@ const App = ( ) => {
               <Route  path="/hero"   element={<Hero/> }   />
               <Route  path="/signup"   element={<Signup/>}   />
               <Route  path="/donations"   element={<Donations/>}   />
+
               <Route  path="/subscribe"  element={<Subscribe/>}  />
               <Route  path="/about"  element={<About/>}  />
               <Route  path="/login"  element={<Login/>}  />
@@ -40,6 +43,9 @@ const App = ( ) => {
               <Route  path="/donationform" element={<DonationForm />} />
 
 
+             
+
+
         </Routes>
 
           </div>
@@ -47,3 +53,4 @@ const App = ( ) => {
 }
 
 export default App;
+
