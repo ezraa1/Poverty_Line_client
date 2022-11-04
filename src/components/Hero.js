@@ -2,6 +2,7 @@ import React from 'react'
 import './Hero.css'
 import TypeWriterEffect from 'react-typewriter-effect';
 
+
 const Hero = () => {
     return (
         <div className='hero' >
@@ -38,7 +39,8 @@ const Hero = () => {
                 </p>
                 <p>Here are few options: You can offer scholarships, donations or hire from our set of talents </p>
                 
-                <a href="/hero" target="_blank" className='button' rel="noopener noreferrer"><b>Hire Talent</b></a>
+                <a href="https://react-search-filter-xi.vercel.app" target="_blank" className='button' rel="noopener noreferrer"><b>Hire Talent</b></a>
+                
             </div>
         </div>
     )

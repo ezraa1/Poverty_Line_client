@@ -7,8 +7,7 @@ const About = () => {
         <div className='about' >
             <div className='container'>
 
-                <img src='https://www.adp.com/-/media/adp/resourcehub/rh2/images/faq/img/co-employment-616x308.jpg?rev=410cd764c61b4694b3784f63cfe982ab&hash=660340AD356258150721A397B0BE29CE' alt='john' width={500} height={450} />
-
+                
                 <img src='https://images.pexels.com/photos/1340725/pexels-photo-1340725.jpeg?auto=compress&cs=tinysrgb&w=600' alt='john' width={500} height={450} />
 
                 <div className='col-2'>
@@ -21,7 +20,7 @@ const About = () => {
                         We do this by providing a platform where  the youth/ needy/ poor can find jobs and generate money,
                         obtain scholarships from donors and raise funds for food and healthcare services.
                     </p>
-                    <button className='button'>Explore More</button>
+                    
                 </div>
             </div>
         </div>
