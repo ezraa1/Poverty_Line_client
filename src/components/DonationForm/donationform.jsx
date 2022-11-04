@@ -2,6 +2,9 @@ import React, {useState} from "react";
 import "./donationform.css";
 import { useNavigate } from "react-router-dom"
 
+import {FaArrowLeft} from "react-icons/fa"
+
+
 const Donation = ( ) => {
 
     const [data, setData] = useState({
@@ -59,6 +62,11 @@ const Donation = ( ) => {
         }
       };
 
+      const handleClick =( ) =>{
+        navigate('/dashboard')
+      }
+
+
       return(
           <div className="log-donform">
               <div className="sign-donform">
@@ -91,6 +99,11 @@ const Donation = ( ) => {
               ) : null}
           </div>
         <div className="form-don">
+
+        <div className="arrow">
+        <FaArrowLeft  onClick={handleClick}/>
+        </div>
+
         <div className="tab-donform">
         <h1>Fill in the form below</h1>
         </div>

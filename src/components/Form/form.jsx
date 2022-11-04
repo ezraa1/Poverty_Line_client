@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import "./form.css"
 import { useNavigate } from "react-router-dom"
+import {FaArrowLeft} from "react-icons/fa"
 
 const Form = ( ) => {
     const [data, setData] = useState({
@@ -82,6 +83,10 @@ const Form = ( ) => {
       }
     };
 
+    const handleClick =( ) =>{
+      navigate('/dashboard')
+    }
+
     return(
         <div className="log-userform">
             <div className="sign-userform">
@@ -113,7 +118,12 @@ const Form = ( ) => {
               </div>
             ) : null}
         </div>
-      <div className="form-user">
+
+      <div className="form">
+      <div className="arrow">
+      <FaArrowLeft  onClick={handleClick}/>
+      </div>
+
       <div className="tab">
       <h1>Fill in the form below</h1>
       </div>

@@ -1,10 +1,6 @@
-.nav-login {
-    background-image: url("../../assets/login.jpg");
-    text-align: center;
-    height: 100vh;
-    overflow-y: auto;
-    background-size: cover;
 
+body {
+  background-image: url(../../assets/blue1.jpg);
 }
 
 .arrow {
@@ -12,14 +8,13 @@
   text-align: left;
   font-size: 30px;
 }
-
 .bar h3{
     text-align: left;
 }
 
 .bar h1 {
     font-size: 5rem;
-    color: white;
+    color: black;
 }
 
 .bar img {

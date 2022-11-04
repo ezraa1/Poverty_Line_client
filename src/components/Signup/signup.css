@@ -1,13 +1,22 @@
-.sign-up {
-    background-color: lightblue;
+
+body {
+
     text-align: center;
     height: 100vh;
     overflow-y: auto;
     background-size: cover;
 }
+
+.sign-up {
+    text-align: center;
+    height: 100vh;
+    overflow-y: auto;
+    background-size: cover;
+    margin-top: 80px;
+}
 .sign h1 {
     font-size: 5rem;
-    color: white;
+    color: black;
 }
 
 .par {
@@ -23,10 +32,7 @@
     margin: 0 auto;
 }
 
-.form-signup form{
-    display: flex;
-    flex-direction: column;
-}
+
 
 .form-signup input {
     font-size: 1rem;
@@ -34,3 +40,7 @@
     align-self: center;
 }
 
+
+.signup-header button {
+   margin-left: 1300px;
+}

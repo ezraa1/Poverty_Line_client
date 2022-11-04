@@ -15,6 +15,9 @@ import Subscribe from "./components/Subscribe";
 import About from "./components/About";
 import Contact from "./components/Contact"
 
+import Admin from "./components/Admin/admin"
+
+
 const App = ( ) => {
   return(
         <div >
@@ -29,10 +32,19 @@ const App = ( ) => {
               <Route  path="/hero"   element={<Hero/> }   />
               <Route  path="/signup"   element={<Signup/>}   />
               <Route  path="/donations"   element={<Donations/>}   />
-              <Route  path="/subscribe"  element={<Subscribe/>}  /> 
-              <Route  path="/about"  element={<About/>}  /> 
-              <Route  path="/login"  element={<Login/>}  /> 
+
+              <Route  path="/subscribe"  element={<Subscribe/>}  />
+              <Route  path="/about"  element={<About/>}  />
+              <Route  path="/login"  element={<Login/>}  />
               <Route  path="/contact" element={<Contact />} />
+              <Route  path="/admin" element={<Admin />} />
+              <Route  path="/region" element={<Region />} />
+              <Route  path="/hero" element={<Hero />} />
+              <Route  path="/donationform" element={<DonationForm />} />
+
+
+             
+
 
         </Routes>
 
